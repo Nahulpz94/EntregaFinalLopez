@@ -553,7 +553,7 @@ letter-spacing: 8px;
 /*estilo nosotros*/ 
 
 #body-nosotros{
-    background-image: url(../imgs/Nosotros/Fondo\ 1.png);
+    background-image: url(../imgs/Nosotros/fondo-nosotros-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -566,7 +566,7 @@ letter-spacing: 8px;
     text-align: center;
     padding: 35px;
     font-size: 60px;
-    width: 90%;
+    width: 100%;
 }
 .conocenos-span {
     color: #AE2A3F;
@@ -587,7 +587,6 @@ main p h3 {
     .img-nosotros{
         width: 400px;
         height: 500px; 
-        margin: 0 1rem;
     }
 
     .img-2{
@@ -628,7 +627,7 @@ main p h3 {
 }
 .video-nosotros {
     height: 450px;  
-    width: 400px;   
+    width: 30%;   
     border: 2px solid black;
     border-radius: 2px;
     box-shadow: 0 0 10px rgb(0, 0, 0)
@@ -638,7 +637,7 @@ main p h3 {
 /*estilo promociones*/
 
 #body-promos {
-    background-image: url(../imgs/Promos/Fondo\ promos.png);
+    background-image: url(../imgs/Promos/fondo-promos-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -648,24 +647,28 @@ main p h3 {
     justify-content: center;
     color:#ffffff;
     background-color: black;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
     padding: 40px;
     font-size: 60px;
-    width: 90%;    
+    width: 100%;    
+}
+
+.promo-h1 span {
+    color:#AE2A3F
 }
 
 .promo-section-top {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
 }
 
 .promo-section-bottom {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
 }
 
 .promo-img {
@@ -681,21 +684,24 @@ main p h3 {
     display: flex;
     background-image:url(../imgs/Promos/fondo-pagos.png);
     width: 90%;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
     justify-content: space-around;
     align-items: center;
 }
 
 .medio-pago {
-    color: #ffffff;
+    color: #AE2A3F;
     background-color: black;
     font-size: 50px;
-    margin-left: 106px;
-    margin-right: 106px;
     text-align: center;
     padding: 40px;
-    width: 90%;
+    width: 100%;
 }
+
+.medio-pago span {
+    color: white
+}
+
 
 .h3-medios-de-pago {
     display: flex;
@@ -771,7 +777,7 @@ main p h3 {
 /*estilo contacto*/
 
 #body-contacto {
-    background-image: url(../imgs/Contacto/fondo-contacto.png);
+    background-image: url(../imgs/Contacto/fondo-contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -781,10 +787,10 @@ main p h3 {
     justify-content: center;
     color:#ffffff;
     background-color: black;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
     padding: 40px;
     font-size: 60px;
-    width: 90%;    
+    width: 100%;    
 }
 
 .contacto-h1 span {
