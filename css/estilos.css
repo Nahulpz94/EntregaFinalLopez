@@ -338,10 +338,6 @@ section div {
     right: 16px;
 }
 
-.scroll-up-container a img {
-    border-radius: 100%;
-    background-color: #AE2A3F;
-}
 
 .scroll-up-container a img:hover {
     background-color: white;
@@ -919,14 +915,6 @@ input:focus::placeholder {
         backdrop-filter: blur(20px);
         letter-spacing: 2px;
     }
-    /*
-    div.container {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    */
 
     #body-index{
         display: block;
@@ -934,12 +922,15 @@ input:focus::placeholder {
         margin: 0;
     }
 
+
+
     header  {
         display: flex;
         justify-content: center;
         width: 100%;
         height: unset;
     }
+
 
     #logo{
         height: 96px;
@@ -1058,7 +1049,7 @@ input:focus::placeholder {
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
     }
 
     #footer-redes {
@@ -1071,7 +1062,7 @@ input:focus::placeholder {
     #footer-hora {
         width: 100%;
         height: auto;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
 
     }
 
