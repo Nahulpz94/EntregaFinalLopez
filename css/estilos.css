@@ -1098,7 +1098,7 @@ input:focus::placeholder {
         justify-content: center;
         align-items: center;
         height: auto;
-        letter-spacing: 6px;
+        letter-spacing: 2px;
     }
 
     #footer-ubicacion h3,
