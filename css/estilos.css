@@ -533,7 +533,8 @@ letter-spacing: 8px;
     
 }
 
-.menu-section-top img {
+.img-menu{ 
+    width: 30%;
     box-shadow: 0 0 10px;
     border: 1px solid black;
 }
@@ -583,29 +584,34 @@ main p h3 {
     height: auto;
     width: 90%;
 }
+    .img-nosotros{
+        width: 400px;
+        height: 500px; 
+        margin: 0 1rem;
+    }
 
-.img-1 {
-    width: 350px;
-    height: 500px;
-}
-.img-2 {
-    width: 350px;
-    height: 500px;
-}
+    .img-2{
+        width: 400px;
+        height: 500px;
+    }
 
 #nosotros-historia {
     color:#ffffff ;
     font-size: 24px;
     text-align: center;
     margin: 0 20px;
-    letter-spacing: 2p
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 #section-fotos {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 1rem;
+
 }
 
 #section-videos {
@@ -615,7 +621,7 @@ main p h3 {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
     background-color: #AE2A3F;
     width: 90%;
     height: 520px;
@@ -726,8 +732,13 @@ main p h3 {
     flex-direction: column;
     align-items: center;
     box-shadow: 0 0 10px black;
-
 }
+
+.tarjetas:hover {
+    transform: scale(1.09);
+    transition: 0.2s ease;
+}
+
 
 .tarjeta {
     display: flex;
@@ -742,8 +753,12 @@ main p h3 {
     display: flex;
     box-shadow: 0 0 10px black;
     flex-direction: column;
-    align-items: center;
-    
+    align-items: center;    
+}
+
+.mercado-pago:hover {
+    transform: scale(1.09);
+    transition: 0.2s ease;
 }
 
 .mercado-pago-img {
@@ -776,8 +791,8 @@ main p h3 {
     color: #AE2A3F;
 }
 .banner-contacto{
-    width: 90%;
-    margin: 1px 106px 0 106px;
+    width: 100%;
+    margin: 0 auto;
     border: 1px solid black;
 }
 
@@ -785,21 +800,21 @@ main p h3 {
     background-image: url(../imgs/Promos/fondo-pagos.png);
     background-size: cover;
     width: 90%;
-    height: 500px;
-    margin: 0 106px 0 106px;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    padding: 20px;
 }
 
 /*formulario de contacto*/
 
 .form-contacto{
-    margin: 10px 0 0 0;
     padding: 10px;
     font-size: 20px;
-    width: 700px;
-    height: 450px;
+    width: 90%;
+    height: 100%;
     text-align: center;
     border: 2px solid black;
     box-shadow: 0 0 15px black
@@ -898,12 +913,12 @@ input:focus::placeholder {
 }
 
 .mapa {
-    display: flex;
     padding: 10px;
-    margin: 10px 0 0 0;
-    justify-content: space-around;
-    width: 700px;
-    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
     border: 2px solid black;
     box-shadow: 0 0 10px 0 black;
 }
@@ -1111,9 +1126,12 @@ input:focus::placeholder {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        justify-content: center;
     }
-    #menu-section-top img {
-        margin-bottom: 1rem;
+    .img-menu {
+        margin: 0 auto 1rem;
+        width: 90%;
+        ;
     }
 
     .card-container-top,
@@ -1124,7 +1142,7 @@ input:focus::placeholder {
         align-items: center;
         flex-wrap: wrap;
         height: unset;
-        background: linear-gradient(270deg, #ae2a3f, grey, #000);
+        background: linear-gradient(270deg, grey, #000);
 
     }
 
