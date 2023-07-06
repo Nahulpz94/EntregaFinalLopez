@@ -1070,7 +1070,6 @@ input:focus::placeholder {
         justify-content: center;
         align-items: center;
         font-size: 14px;
-        letter-spacing: 2px;
     }
 
     #footer-redes {
@@ -1083,7 +1082,6 @@ input:focus::placeholder {
     #footer-hora {
         width: 100%;
         height: auto;
-        letter-spacing: 2px;
 
     }
 
@@ -1094,11 +1092,14 @@ input:focus::placeholder {
     #footer-ubicacion {
         display: flex;
         flex-direction: column;
-        font-size: 16px;
+        font-size: 14px;
         justify-content: center;
         align-items: center;
         height: auto;
-        letter-spacing: 2px;
+    }
+
+    footer p {
+        letter-spacing: 0;
     }
 
     #footer-ubicacion h3,
