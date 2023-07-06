@@ -561,9 +561,9 @@ letter-spacing: 8px;
 #nosotros-conocenos {
     color: white;
     background-color: black;
-    margin: 0 106px 0 106px;
+    margin: 0 auto;
     text-align: center;
-    padding: 40px;
+    padding: 35px;
     font-size: 60px;
     width: 90%;
 }
@@ -579,19 +579,17 @@ main p h3 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0 106px 0 106px;
-    height: 500px;
+    margin: 0 auto;
+    height: auto;
     width: 90%;
 }
 
 .img-1 {
-    width: 400px;
+    width: 350px;
     height: 500px;
-    padding: 2px;
 }
 .img-2 {
-    padding: 2px;
-    width: 400px;
+    width: 350px;
     height: 500px;
 }
 
@@ -599,6 +597,8 @@ main p h3 {
     color:#ffffff ;
     font-size: 24px;
     text-align: center;
+    margin: 0 20px;
+    letter-spacing: 2p
 }
 
 #section-fotos {
