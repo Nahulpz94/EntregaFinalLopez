@@ -553,7 +553,7 @@ letter-spacing: 8px;
 /*estilo nosotros*/ 
 
 #body-nosotros{
-    background-image: url(../imgs/Nosotros/fondo-nosotros-2.jpg);
+    background-image: url(../imgs/Nosotros/fondo-nosotros.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -637,7 +637,7 @@ main p h3 {
 /*estilo promociones*/
 
 #body-promos {
-    background-image: url(../imgs/Promos/fondo-promos-2.jpg);
+    background-image: url(../imgs/Promos/fondo-promos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
