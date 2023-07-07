@@ -1183,6 +1183,14 @@ input:focus::placeholder {
         margin-bottom: 1rem;
     }
 
+    .body-nosotros {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: unset;
+
+    }
+
     .nosotros-main {
         display: flex;
         width: 100%;
@@ -1190,17 +1198,18 @@ input:focus::placeholder {
         flex-direction: column;
     }
 
-    #nosotros-conocenos {
+    .nosotros-conocenos {
         width: 100%;
         margin: 0;
     }
 
-    #nosotros-historia {
+    .nosotros-historia {
         margin: 2rem 1rem;
     }
 
     .img-nosotros {
         width: 100%;
+
     }
 
     .section-fotos {
@@ -1232,6 +1241,13 @@ input:focus::placeholder {
         width: 80%;
         margin: 1rem 0;
         border: none;
+    }
+
+    .body-promos {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: unset;
     }
 
     .promo-h1 {
@@ -1280,6 +1296,12 @@ input:focus::placeholder {
         box-shadow: none;
     }
 
+    .body-contacto {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: unset;
+    }
 
     .contacto-h1{
         width: 100%;
