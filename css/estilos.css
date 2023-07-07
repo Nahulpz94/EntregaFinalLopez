@@ -35,7 +35,7 @@ html {
 
 
 /*header*/
-#header {
+.header {
     position:sticky;
     top: 0;
     z-index: 100;
@@ -64,7 +64,7 @@ html {
 }
 
 /*links header*/
-#header div a {
+.header div a {
     color: rgb(255, 255, 255);
 }
 nav {
@@ -146,7 +146,7 @@ nav {
 /*prueba*/
 
 /*seccion principal*/
-#main-index {
+.main-index {
     background-image: url(../imgs/Main/fondo-volvimos.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
@@ -167,7 +167,7 @@ nav {
     margin: 0 auto;
 }
 
-#contenedor-volvimos{
+.contenedor-volvimos{
     display: grid;
     row-gap: 10px;
     grid-template-areas:
@@ -183,7 +183,7 @@ nav {
     justify-content: center;
 }
 
-#contenedor-volvimos h3 {
+.contenedor-volvimos h3 {
     font-size: 30px;
     text-align: center;
     letter-spacing: 8px;
@@ -220,7 +220,7 @@ nav {
 
 /* botones main*/
 
-#contenedor-botones-index {
+.contenedor-botones-index {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -282,7 +282,7 @@ section h3 {
     justify-content: center;
 }
 
-#novedad {
+.novedad {
     font-size: larger;
     letter-spacing: 2px;
     display: grid;
@@ -296,7 +296,7 @@ section div {
 
 }
 /*foto pizza party */
-#pizzaparty {
+.pizzaparty {
     display: flex;
     width: 500px;
     height: 600px;
@@ -304,13 +304,13 @@ section div {
     box-shadow: 0 0 20px black;
 }
 
-#pizzaparty:hover {
+.pizzaparty:hover {
     transform: scale(1.05);
     transition: 0.5s ease;
 }
 
 /* video novedades */
-#video-index {
+.video-index {
     display: flex;
     border: #000000 1px solid;
     width: 500px;
@@ -320,18 +320,18 @@ section div {
     box-shadow: 0 0 20px black;
 }
 
-#video-index:hover {
+.video-index:hover {
     transform: scale(1.05);
     transition: 0.5s ease;
 }
 
 /*foto novedades */
-#logo-novedad {
+.logo-novedad {
     display: flex;
     width: 450px;
     height: 600px;
 }
-#contenedor-videos-index {
+.contenedor-videos-index {
     display: flex;
     width: 100%;
     height: 600px;
@@ -355,7 +355,7 @@ section div {
 
 }
 
-#footer {
+.footer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -367,22 +367,22 @@ section div {
     margin: 0; 
 }
 /* enlaces */
-#footer a {
+.footer a {
     color: white;
     text-decoration: none;
 
 }
 /* iconos redes */
-#footer-redes {
+.footer-redes {
     margin-top: 10px;
     display: flex;
 }
-#footer-redes a {
+.footer-redes a {
     display: inline-flex;
     padding: 3px;
 }
 
-#footer-redes i:hover {
+.footer-redes i:hover {
     background-color: #ffffff;
     color: #464545;
     opacity: 0.7;
@@ -390,7 +390,7 @@ section div {
     transition: 0.3s ease;
 }
 
-#footer-info {
+.footer-info {
     display: flex;
     height: auto;
     flex-direction: column;
@@ -402,7 +402,7 @@ section div {
 
 }
 
-#footer-info h3 {
+.footer-info h3 {
     font-size: 20px;
     margin:0;
     padding: 10px;
@@ -411,7 +411,7 @@ section div {
     letter-spacing: 8px;
 }
 
-#footer-ubicacion {
+.footer-ubicacion {
     margin-top: 1%;
     display: flex;
     flex-direction: column;
@@ -434,7 +434,7 @@ section div {
     justify-content: center;
 }
 
-#footer-hora {
+.footer-hora {
 margin-top: 1%;
 display: flex;
 justify-content: center;
@@ -448,8 +448,8 @@ height: auto;
 letter-spacing: 8px;
 }
 
-#footer-ubicacion h3,
-#footer-hora h3 {
+.footer-ubicacion h3,
+.footer-hora h3 {
     font-size: 24px;
     display: flex;
     justify-content: center;
@@ -457,8 +457,8 @@ letter-spacing: 8px;
     text-decoration: underline;
     margin: 0;
 }
-#footer-ubicacion p,
-#footer-hora p {
+.footer-ubicacion p,
+.footer-hora p {
     margin: 0;
 
 }
@@ -476,7 +476,7 @@ letter-spacing: 8px;
 }
 
 /*h1 menu*/
-#nuestro-menu {
+.nuestro-menu {
     margin: 0 auto;
     width: 90%;
     background-color: black;
@@ -531,7 +531,7 @@ letter-spacing: 8px;
 }
 
 /*seccion superior*/
-#menu-section-top {
+.menu-section-top {
     width: 90%;
     background-color: #AE2A3F;
     background-repeat: no-repeat;
@@ -549,7 +549,7 @@ letter-spacing: 8px;
 }
 
 /*seccion baja*/
-#menu-section-bottom {
+.menu-section-bottom {
     width: 90%;
     margin: 0 auto;
     background-color: #AE2A3F;
@@ -562,14 +562,14 @@ letter-spacing: 8px;
 
 /*estilo nosotros*/ 
 
-#body-nosotros{
+.body-nosotros{
     background-image: url(../imgs/Nosotros/fondo-nosotros.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     
 }
 
-#nosotros-conocenos {
+.nosotros-conocenos {
     color: white;
     background-color: black;
     margin: 0 auto;
@@ -594,14 +594,15 @@ main p h3 {
     height: auto;
     width: 90%;
 }
-    .img-nosotros{
-        width: 400px;
-        height: 500px; 
-    }
 
-    .img-2{
-        width: 400px;
-        height: 500px;
+.img-nosotros{
+    width: 400px;
+    height: 500px; 
+}
+
+.img-2{
+    width: 400px;
+    height: 500px;
     }
 
 .nosotros-historia {
@@ -646,7 +647,7 @@ main p h3 {
 
 /*estilo promociones*/
 
-#body-promos {
+.body-promos {
     background-image: url(../imgs/Promos/fondo-promos.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -700,7 +701,7 @@ main p h3 {
 }
 
 .medio-pago {
-    color: #AE2A3F;
+    color: #ffffff;
     background-color: black;
     font-size: 50px;
     text-align: center;
@@ -710,7 +711,7 @@ main p h3 {
 }
 
 .medio-pago span {
-    color: white
+    color: #AE2A3F
 }
 
 
@@ -787,7 +788,7 @@ main p h3 {
 
 /*estilo contacto*/
 
-#body-contacto {
+.body-contacto {
     background-image: url(../imgs/Contacto/fondo-contacto.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -953,7 +954,7 @@ input:focus::placeholder {
         letter-spacing: 2px;
     }
 
-    #body-index{
+    .body-index{
         display: block;
         padding: 0;
         margin: 0;
@@ -961,7 +962,7 @@ input:focus::placeholder {
 
 
 
-    #header {
+    .header {
         display: flex;
         justify-content: center;
         width: 100%;
@@ -985,12 +986,12 @@ input:focus::placeholder {
     
     }
 
-    #main-index {
+    .main-index {
         width: 100%;
         height: unset;
     }
 
-    #index-section-bottom {
+    .index-section-bottom {
         display: block;
         margin: 0 auto;
         height: unset;
@@ -1008,7 +1009,7 @@ input:focus::placeholder {
 
     }
 
-    #contenedor-videos-index {
+    .contenedor-videos-index {
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -1018,23 +1019,23 @@ input:focus::placeholder {
         
     }
 
-    #contenedor-videos-index section div {
+    .contenedor-videos-index section div {
         display: flex;
         justify-content: space-around;
     }
 
-    #pizzaparty {
+    .pizzaparty {
         width: 100%;
         height: unset;
         margin-bottom: 2rem;
         border: none;
     }
-    #logo-novedad {
+    .logo-novedad {
         width: 100%;
         display: none;
     }
 
-    #video-index {
+    .video-index {
         width: 100%;
         margin-bottom: 2rem;
     }
@@ -1043,7 +1044,7 @@ input:focus::placeholder {
         font-size: 26px; 
     }
 
-    #contenedor-volvimos h3 {
+    .contenedor-volvimos h3 {
         font-size: 18px;
     }
 
