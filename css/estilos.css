@@ -42,8 +42,10 @@ html {
     display: flex;
     background-color: #AE2A3F;
     border: solid 1px #000000;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     height: 100px;
+
 }
 
 
@@ -145,16 +147,16 @@ nav {
 
 /*seccion principal*/
 #main-index {
-
     background-image: url(../imgs/Main/fondo-volvimos.jpg); 
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;  
     flex-wrap: wrap;
-    width: 100%;
+    width: 90%;
     height: 600px;
     color: #ffffff;
     border: #000000 1px solid;
+    margin: 0 auto;
 }
 
 .main-overlay {
@@ -162,6 +164,7 @@ nav {
     height: 600px;
     background-color: black;
     opacity: 0.9;
+    margin: 0 auto;
 }
 
 #contenedor-volvimos{
@@ -174,6 +177,7 @@ nav {
     width: 100%;
     height: 370px;
     font-size: 32px;
+    margin: 0 auto;
     margin-top: 50px;
     padding: 0px;
     justify-content: center;
@@ -186,9 +190,12 @@ nav {
 }
 /* texto main*/
 .texto-index {
+    display: flex;
+    width: 100%;
     letter-spacing: 1px;
     color: white;
     font-size: 24px;
+    text-align: center;
 }
 
 /* h1 main*/
@@ -196,12 +203,13 @@ nav {
 .volvimos {
     letter-spacing: 15px;
     font-weight: bold;
-    width: 100%;
+    width: 90%;
     height: 100px;
     display: grid;
     grid-area: h1;
     color: #ffffff;
     font-size: 90px;
+    margin: 0 auto;
     margin-top: 10px;
     font-family: sans-serif;
     text-align: center;
@@ -469,8 +477,8 @@ letter-spacing: 8px;
 
 /*h1 menu*/
 #nuestro-menu {
-    margin: 0;
-    width: 100%;
+    margin: 0 auto;
+    width: 90%;
     background-color: black;
     color: #AE2A3F;
     padding: 40px;
@@ -524,12 +532,13 @@ letter-spacing: 8px;
 
 /*seccion superior*/
 #menu-section-top {
-    width: 100%;
+    width: 90%;
     background-color: #AE2A3F;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: space-around;
+    margin: 0 auto;
     
 }
 
@@ -541,7 +550,8 @@ letter-spacing: 8px;
 
 /*seccion baja*/
 #menu-section-bottom {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     background-color: #AE2A3F;
     background-repeat: no-repeat;
     background-size: cover;
@@ -566,7 +576,7 @@ letter-spacing: 8px;
     text-align: center;
     padding: 35px;
     font-size: 60px;
-    width: 100%;
+    width: 90%;
 }
 .conocenos-span {
     color: #AE2A3F;
@@ -594,7 +604,7 @@ main p h3 {
         height: 500px;
     }
 
-#nosotros-historia {
+.nosotros-historia {
     color:#ffffff ;
     font-size: 24px;
     text-align: center;
@@ -603,7 +613,7 @@ main p h3 {
     font-weight: bold;
 }
 
-#section-fotos {
+.section-fotos {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -613,7 +623,7 @@ main p h3 {
 
 }
 
-#section-videos {
+.section-videos {
     background-image: url(../imgs/Nosotros/fondo-Videos.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -650,7 +660,7 @@ main p h3 {
     margin: 0 auto;
     padding: 40px;
     font-size: 60px;
-    width: 100%;    
+    width: 90%;    
 }
 
 .promo-h1 span {
@@ -679,7 +689,7 @@ main p h3 {
 }
 
     /*estilo medios de pago*/
-#medios-pago{
+.section-mediopagos{
     height: 320px;
     display: flex;
     background-image:url(../imgs/Promos/fondo-pagos.png);
@@ -695,7 +705,8 @@ main p h3 {
     font-size: 50px;
     text-align: center;
     padding: 40px;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .medio-pago span {
@@ -790,19 +801,24 @@ main p h3 {
     margin: 0 auto;
     padding: 40px;
     font-size: 60px;
-    width: 100%;    
+    width: 90%;    
 }
 
 .contacto-h1 span {
     color: #AE2A3F;
 }
-.banner-contacto{
-    width: 100%;
+
+.contenedor-banner {
+    width: 90%;
     margin: 0 auto;
-    border: 1px solid black;
 }
 
-#main-contacto {
+.banner-contacto {
+    width: 100%;
+}
+
+
+.main-contacto {
     background-image: url(../imgs/Promos/fondo-pagos.png);
     background-size: cover;
     width: 90%;
@@ -945,17 +961,13 @@ input:focus::placeholder {
 
 
 
-    header  {
+    #header {
         display: flex;
         justify-content: center;
         width: 100%;
-        height: unset;
+        height: auto;
     }
 
-
-    #logo{
-        height: 96px;
-    }
 
     nav {
         width: 100%;
@@ -974,12 +986,13 @@ input:focus::placeholder {
     }
 
     #main-index {
+        width: 100%;
         height: unset;
     }
 
     #index-section-bottom {
         display: block;
-        margin: 0px;
+        margin: 0 auto;
         height: unset;
         width: 100%;
     }
@@ -1112,18 +1125,21 @@ input:focus::placeholder {
     }
 
 
-    #body-menu{
+    .body-menu{
+        background-color: #383838;
         display: block;
         margin: 0;
         padding-right: 0;
         height: unset;
         width: 100%;
+        background: none;
     
     }
 
     #nuestro-menu {
         padding: 20px;
         font-size: 3em;
+        width: 100%;
     }
 
     #menu-section-top {
@@ -1158,12 +1174,143 @@ input:focus::placeholder {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        width: 100%;
+        margin: 0 auto;
     }
 
     #menu-section-bottom img {
         margin-bottom: 1rem;
     }
+
+    .nosotros-main {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    #nosotros-conocenos {
+        width: 100%;
+        margin: 0;
+    }
+
+    #nosotros-historia {
+        margin: 2rem 1rem;
+    }
+
+    .img-nosotros {
+        width: 100%;
+    }
+
+    .section-fotos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1 auto;
+        gap: 20px;
+        width: 90%;
+
+    }
+
+    #img-masas {
+        display: none;
+    }
+
+    .section-videos {
+        background: none;
+        background-color: #AE2A3F;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: unset;
+
+    }
+
+    .video-nosotros {
+        height: unset;
+        width: 80%;
+        margin: 1rem 0;
+        border: none;
+    }
+
+    .promo-h1 {
+        width: 100%;
+    }
+
+    .promo-section-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .promo-section-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .medio-pago {
+        width: 100%;
+    }
+
+    .section-mediopagos{
+        background: none;
+        width: 100%;
+        height: unset;
+        display: flex;
+        background-color: #AE2A3F;
+        flex-wrap: wrap;
+    }
+
+    .caja-efectivo,
+    .tarjetas,
+    .mercado-pago{
+        width: 100%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        border: none;
+        box-shadow: none;
+    }
+
+
+    .contacto-h1{
+        width: 100%;
+    }
+    .contenedor-banner{ 
+        width: 100%;
+        height: unset;
+    }
+    .main-contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: none;
+        background-color: #AE2A3F;
+
+    }
+    .form-contacto{
+        margin: 1rem 0;
+    }
+
+    .boton-contacto {
+        width: 50%;
+    }
+
+    .navbar-brand {
+        display: flex;
+        height: 108px;
+        margin: 0;
+    }
 }   
+
 
 
 
