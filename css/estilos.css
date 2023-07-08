@@ -683,7 +683,7 @@ main p h3 {
 }
 
 .promo-img {
-    width: 550px;
+    width: 100%;
     height: 700px;
     margin: 5px;
     box-shadow: 0 0 10px grey;
@@ -808,6 +808,7 @@ main p h3 {
 .contacto-h1 span {
     color: #AE2A3F;
 }
+
 
 .contenedor-banner {
     width: 90%;
@@ -1213,6 +1214,8 @@ input:focus::placeholder {
         color: #AE2A3F;
         width: 100%;
         margin: 0;
+        padding: 20px;
+        font-size: 3em;
     }
 
     .nosotros-historia {
@@ -1264,6 +1267,8 @@ input:focus::placeholder {
 
     .promo-h1 {
         width: 100%;
+        padding: 20px;
+        font-size: 3em;
     }
 
     .promo-section-top {
@@ -1283,10 +1288,12 @@ input:focus::placeholder {
     }
 
     .promo-img {
-        width: 100%;
+        margin: 0 auto 1rem;
+        width: 90%;
         height: unset;
-        margin: 0;
     }
+    
+    
 
     .medio-pago {
         width: 100%;
@@ -1323,7 +1330,14 @@ input:focus::placeholder {
 
     .contacto-h1{
         width: 100%;
+        padding: 20px;
+        font-size: 3em;
     }
+
+    .contacto-h1 span{
+        display: none;
+    }
+
     .contenedor-banner{ 
         width: 100%;
         height: unset;
