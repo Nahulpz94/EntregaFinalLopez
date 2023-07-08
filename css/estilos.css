@@ -960,8 +960,6 @@ input:focus::placeholder {
         margin: 0;
     }
 
-
-
     .header {
         display: flex;
         justify-content: center;
@@ -976,6 +974,11 @@ input:focus::placeholder {
         margin: 0;
     }
 
+    .navbar-brand {
+        display: flex;
+        height: 108px;
+        margin: 0;
+    }
     .offcanvas-backdrop.fade.show{
         display:none;
     }
@@ -1198,6 +1201,10 @@ input:focus::placeholder {
         flex-direction: column;
     }
 
+    .conocenos-span {
+        display: none;
+    }
+
     .nosotros-conocenos {
         width: 100%;
         margin: 0;
@@ -1327,10 +1334,8 @@ input:focus::placeholder {
         width: 50%;
     }
 
-    .navbar-brand {
-        display: flex;
-        height: 108px;
-        margin: 0;
+    .mapa {
+        width: 50%;
     }
 }   
 
