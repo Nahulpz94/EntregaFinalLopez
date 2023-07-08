@@ -935,15 +935,19 @@ input:focus::placeholder {
     
 }
 
-.mapa {
+.contenedor-mapa {
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 100%;
     height: 100%;
     border: 2px solid black;
     box-shadow: 0 0 10px 0 black;
+}
+
+.mapa {
+    width: 80%;
 }
 
 /*media movil*/
@@ -1206,6 +1210,7 @@ input:focus::placeholder {
     }
 
     .nosotros-conocenos {
+        color: #AE2A3F;
         width: 100%;
         margin: 0;
     }
@@ -1267,14 +1272,20 @@ input:focus::placeholder {
         flex-direction: column;
         flex-wrap: wrap;
         align-items: center;
+        margin: 0 auto;
     }
 
     .promo-section-bottom {
         width: 100%;
         display: flex;
         flex-direction: column;
-        flex-wrap: wrap;
         align-items: center;
+    }
+
+    .promo-img {
+        width: 100%;
+        height: unset;
+        margin: 0;
     }
 
     .medio-pago {
@@ -1335,7 +1346,11 @@ input:focus::placeholder {
     }
 
     .mapa {
-        width: 50%;
+        width: 100%;
+    }
+
+    .contenedor-mapa {
+        width: 100%
     }
 }   
 
