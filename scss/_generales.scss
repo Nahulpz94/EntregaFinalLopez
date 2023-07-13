@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Permanent Marker', cursive;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*fondo index*/
+
+.body-index {
+    width: 100%;
+    background-image: url(../imgs/Main/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-rows: auto 1fr auto;  
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";
+    min-height: 100vh;
+}
+
+#body-menu {/*estilos menu*/
+    position: absolute;
+    width: 100%;
+    background-image: url(../imgs/Menu/fondo-menu-3.jpg); /*fondo*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+/*estilo nosotros*/ 
+
+.body-nosotros{
+    background-image: url(../imgs/Nosotros/fondo-nosotros.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+/*estilo promociones*/
+
+.body-promos {
+    background-image: url(../imgs/Promos/fondo-promos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*estilo contacto*/
+
+.body-contacto {
+    background-image: url(../imgs/Contacto/fondo-contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+

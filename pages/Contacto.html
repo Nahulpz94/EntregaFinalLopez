@@ -23,7 +23,7 @@
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../imgs/Logo.png" id="logo"  alt="Logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../imgs/Logo.png" id="logo"  alt="Logo"></a>
                 <button class="navbar-toggler border-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -60,21 +60,16 @@
         </nav>
     </header>
     <!-- cierre header-->
-    
     <h1 class="contacto-h1"><span>¡</span>CONTACTANOS<span>!</span></h1>
     <div class="contenedor-banner">
         <img class="banner-contacto" src="../imgs/Contacto/banner.png">
     </div>
-    
     <!--inicio main-->
     <main class="main-contacto" id="main-contacto">
         <form class="form-contacto" id="form-contacto" action="">
-            <input type="text" name="nombre" placeholder="Nombre" class="campo">
-            <br>
-            <input type="email" name="email" placeholder="Correo" class="campo">
-            <br>
-            <textarea type="text" name="mensaje" placeholder="Dejanos tú Opinión" class="caja-mensaje"></textarea>
-            <br>
+            <input type="text" name="nombre" required placeholder="Nombre" class="campo" oninvalid="setCustomValidity('Ingresá tú Nombre')" oninput="setCustomValidity('')">
+            <input type="email" name="email" required placeholder="Correo" class="campo" oninvalid="setCustomValidity('Ingresá tú e-mail')" oninput="setCustomValidity('')">
+            <textarea type="text" name="mensaje" required placeholder="Dejanos tú Opinión" class="caja-mensaje" oninvalid="setCustomValidity('Escribe un Mensaje')" oninput="setCustomValidity('')"></textarea>
             <button id="submit-button" type="submit" class="boton-contacto">Enviar Mensaje</button>    
         </form>
         <div class="contenedor-mapa" id="mapa" >
@@ -82,7 +77,6 @@
         </div>
     </main>  
     <!--cierre main-->
-
 
     <footer class="footer" id="footer">
         <div class="scroll-up-container">

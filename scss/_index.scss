@@ -1,0 +1,177 @@
+.main-index {/*seccion principal*/
+    background-image: url(../imgs/Main/fondo-volvimos.jpg); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;  
+    flex-wrap: wrap;
+    width: 90%;
+    height: 600px;
+    color: map-get($colores , salmon-claro) ;
+    margin: 0 auto;
+
+    .main-overlay {/*overlay main*/
+        width: 100%;
+        height: 600px;
+        background-color: map-get($colores , secundario);
+        opacity: 0.9;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+
+    .contenedor-volvimos{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 370px;
+        font-size: 32px;
+        margin: 0 auto;
+        margin-top: 50px;
+        padding: 0px;
+        h3 {
+            position: relative;
+            font-size: 30px;
+            text-align: center;
+            letter-spacing: 8px;
+            animation-name: bounceInLeft;
+        animation-duration: 2s;
+        z-index: 1;
+        }
+    }
+
+    .texto-index {/*parrafo*/
+        display: flex;
+        width: 100%;
+        letter-spacing: 1px;
+        color: map-get($colores , terciario);
+        font-size: 24px;
+        text-align: center;
+        z-index: 2;
+    }
+    .volvimos {/* h1 main*/
+        letter-spacing: 15px;
+        font-weight: bold;
+        width: 90%;
+        height: 100px;
+        display: flex;
+        color: map-get($colores , terciario);
+        font-size: 90px;
+        margin: 0 auto;
+        margin-top: 10px;
+        font-family: sans-serif;
+        text-align: center;
+        justify-content: center;
+        animation-name: bounceInRight;
+        animation-duration: 2s;
+
+        span {
+                color:map-get($colores, detalles-naranja);
+            }
+    }
+    .contenedor-botones-index {/* botones main*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100%;
+        animation-name: zoomInUp;
+        animation-duration: 2s;
+        z-index: 4;
+        a { 
+            display: flex;
+            justify-content: center;
+            color: map-get($colores , terciario);
+            font-size: 24px;
+            height: 40px;
+            background-color: map-get($colores, detalles-naranja);
+            border-radius: 10px;
+            margin: 20px;
+            padding: 5px;
+            text-decoration: none;
+            }
+            .boton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 180px;
+                border: #000000 5px linear;
+                letter-spacing: 2px;
+            &:hover {
+                color: map-get($colores , detalles-violeta) ;
+                background-color: map-get($colores , salmon-oscuro);
+                transition: 0.3s ease;
+                transform: scale(1.1);
+                box-shadow: 1px 3px 5px 0px rgb(66, 66, 66);
+                }
+            }
+        }
+    }
+
+.index-section-bottom {/* seccion novedades */
+    display: flex;
+    flex-direction: column;
+    background-color:map-get($colores , primario);
+    font-size: 40px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    
+    /*novedades h3*/
+    h3 {
+        color: map-get($colores , terciario);
+        margin-top: 10px;
+        margin-bottom: 30px;
+        grid-area: h3;
+        justify-content: center;
+    }
+    .novedad {
+        font-size: larger;
+        letter-spacing: 2px;
+        display: grid;
+        width: 100%;
+        height: 50px;
+        animation-name: heartBeat;
+        animation-duration: 10s;
+    }
+    
+    .contenedor-videos-index {
+        display: flex;
+        width: 100%;
+        height: 600px;
+        justify-content: space-around;
+
+        .pizzaparty {/*foto pizza party */
+            display: flex;
+            width: 500px;
+            height: 600px;
+            border: #000000 1px solid;
+            box-shadow: 0 0 20px black;
+            &:hover {
+                transform: scale(1.05);
+                transition: 0.5s ease;
+            }
+        }
+        .video-index {/* video novedades */
+            display: flex;
+            border: #000000 1px solid;
+            width: 500px;
+            height: 600px;
+            padding: 15px; 
+            top: 0px; 
+            box-shadow: 0 0 20px black;
+            
+            &:hover{
+                transform: scale(1.05);
+                transition: 0.5s ease;
+            }
+        }
+        .logo-novedad { /*foto novedades */
+        display: flex;
+        width: 450px;
+        height: 600px;
+        }
+    }
+}

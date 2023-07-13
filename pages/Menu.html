@@ -9,8 +9,9 @@
     <!--bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- animated css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     
-
     <!--estilos-->
     <link rel="stylesheet" type="text/css" href="../css/estilos.css">
     <!--iconos-->
@@ -22,7 +23,7 @@
     <header class="header" id="header">
         <nav class="navbar navbar-expand-lg navbar-dark ">
             <div class="container">
-                <a class="navbar-brand" href="#"><img src="../imgs/Logo.png" id="logo"  alt="Logo"></a>
+                <a class="navbar-brand" href="../index.html"><img src="../imgs/Logo.png" id="logo"  alt="Logo"></a>
                 <button class="navbar-toggler border-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
@@ -37,7 +38,7 @@
                         <a class="nav-link" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item mx-2">
-                        <a class="nav-link" id="active"  href=".git/Menu.html">Menú</a>
+                        <a class="nav-link" id="active" href="Menu.html">Menú</a>
                     </li>
                     <li class="nav-item mx-2">
                         <a class="nav-link" href="./Nosotros.html">Nosotros</a>
@@ -61,83 +62,134 @@
     <!-- cierre header-->
     
             <!--seccion superior-->
-
-    <h1 class="nuestro-menu" id="nuestro-menu"><span class="nuestro">NUESTRO</span> MENÚ</h1>
-
-    <main id="menu-section-top" class="menu-section-top">
-            <img class="img-menu" src="../imgs/Menu/Menú_page-0002.jpg" alt="menu 2" height="970px">
-            <img class="img-menu" src="../imgs/Menu/Menú_page-0003.jpg" alt="menu 3" height="970px">
-            <img class="img-menu" src="../imgs/Menu/Menú_page-0004.jpg" alt="menu 4" height="970px">
+    <div id="contenedor-h1-menu" class="contenedor-h1-menu">
+        <h1 animate__animated animate__fadeInUp class="nuestro-menu" id="nuestro-menu"><span class="nuestro">NUESTRO</span> MENÚ</h1>
+    </div>
+    <main animate__animated animate__bounceInUp id="menu-section-top" class="menu-section-top">
+        <img class="img-menu" src="../imgs/Menu/Menú_page-0002.jpg" alt="menu 2" height="970px">
+        <img  class="img-menu" src="../imgs/Menu/Menú_page-0003.jpg" alt="menu 3" height="970px">
+        <img class="img-menu" src="../imgs/Menu/Menú_page-0004.jpg" alt="menu 4" height="970px">
     </main>
 
         <!--1ras card-->
 
     <section class="card-container-top">
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/pizza 11.jpg" height="200px" width="100px" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Jamón y Morrones</p>
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/pizza 11.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Jamón y Morrones</p>
+                </div>   
+                </div>
+                <div class="card-back">
+                <p animate_animated animate__backInDown>Salsa de Tomate <br> Muzzarella<br>Champiñones<br>Morrón<br>Jamón<br>Aceitunas Negras<br>Huevo</p>
+                </div> 
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/pizza 5.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/pizza 5.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Panceta y Huevo</p>
+                </div>   
                 </div>
+                <div class="card-back">
+                <p>Salsa de Tomate <br> Muzzarella<br>Panceta Frita<br>Huevo Frito<br>Aceitunas Negras</p>
+                </div> 
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/picada.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/picada.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
                 <div class="card-body">
                     <p class="card-text">Tabla La Jirafa</p>
+                </div>   
                 </div>
+                <div class="card-back">
+                <p> Arrolladitos<br>Bastones de Muzzarella<br>Pollo Crispy<br>Canastitas<br>Empanaditas<br>Triángulitos de Fainá Especial</p>
+                </div> 
+            </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/burger.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Cheeseburger</p>
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/burger.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Cheeseburger</p>
+                </div>   
+                </div>
+                <div class="card-back">
+                <p>Carne<br>Panceta<br>Huevo Frito<br>Queso Cheddar<br>Papas Fritas</p>
+                </div> 
             </div>
         </div>
     </section>
 
             <!--2das cards-->
     <section class="card-container-bottom">
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/pizza 2.jpg" height="200px" width="100px" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Calabresa</p>
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/pizza 2.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Calabresa</p>
+                </div>   
+                </div>
+                <div class="card-back">
+                <p>Salsa de Tomate<br>Muzzarella<br>Longaniza<br>Oregano<br>Aceitunas</p>
+                </div> 
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/pizza 10.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Brasilera</p>
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/pizza 10.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Brasilera</p>
+                </div>   
+                </div>
+                <div class="card-back">
+                <p>Muzzarella<br>Jamón<br>Ananá<br>Cerezas</p>
+                </div> 
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
-            <img src="../imgs/Menu/mila.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Milanesa Americana</p>
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
+                <img src="../imgs/Menu/mila.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Milanesa Americana</p>
+                </div>   
+                </div>
+                <div class="card-back">
+                <p>Carne o Pollo<br>Cheddar<br>Panceta Picada<br>Tomate<br>Huevo Frito<br>Aceitunas<br>Papas Fritas</p>
+                </div> 
             </div>
         </div>
-        <div class="card" style="width: 18rem;">
+        <div class="card-container">
+            <div class="card-1" style="width: 18rem;">
+                <div class="card-front">
                 <img src="../imgs/Menu/gratinado.jpg"  height="200px" width="100px" class="card-img-top" alt="...">
-            <div class="card-body">
-                <p class="card-text">Pasta Gratinada</p>
+                <div class="card-body">
+                    <p class="card-text">Pasta Gratinada</p>
+                </div>   
+                </div>
+                <div class="card-back">
+                <p>Pasta a Elección<br>Salsa a Elección<br>Gratinada al Horno</p>
+                </div> 
             </div>
         </div>
     </section>
 
     <!--seccion inferior-->
-    </section>
-    <section class="menu-section-bottom" id="menu-section-bottom">
-        <img class="img-menu" src="../imgs/Menu/Menú_page-0005.jpg" alt="menu 5" height="970px">
-        <img class="img-menu" src="../imgs/Menu/Menú_page-0006.jpg" alt="menu 4" height="970px">
-        <img class="img-menu" src="../imgs/Menu/Menú_page-0007.jpg" alt="menu 5" height="970px">
-    </section>
-    <!---->   
-
-        
-
+    <div class="menu-section-bottom" id="menu-section-bottom">
+        <img class="menu-img" id="menu-img" src="../imgs/Menu/Menú_page-0005.jpg" alt="menu 5" height="970px">
+        <img class="menu-img" id="menu-img" src="../imgs/Menu/Menú_page-0006.jpg" alt="menu 4" height="970px">
+        <img class="menu-img" id="menu-img" src="../imgs/Menu/Menú_page-0007.jpg" alt="menu 5" height="970px">
+    </div>
 
     <!--inicio footer-->
     <footer class="footer" id="footer">

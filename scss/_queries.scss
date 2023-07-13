@@ -1,0 +1,404 @@
+/*media movil*/
+@media (max-width: 600px){
+
+    .body-index{
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+    nav {
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .navbar-brand {
+        display: flex;
+        height: 108px;
+        margin: 0;
+    }  
+
+    .sidebar{
+        background-color: rgba(174, 42, 63, 0.70);
+        backdrop-filter: blur(20px);
+        letter-spacing: 2px;
+    }
+    .offcanvas-backdrop.fade.show{
+        display:none;
+    }
+    #logo-redes {
+        width: unset;
+        margin: 5px auto 0;    
+    }
+
+    .main-index {
+        width: 100%;
+        height: unset;
+        .main-overlay {
+            height: unset;
+            padding: 0 2em;
+            .volvimos {
+                height: unset;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2em;
+                color:map-get($colores , salmon-claro) ;
+                .volvimos-h3 {
+                    font-size: 18px;
+                    height: unset;
+                    color: map-get($colores , salmon-oscuro);
+                }
+            }
+            .contenedor-botones-index{
+                height: unset;
+            }
+        }
+    }
+
+    .index-section-bottom {
+        display: block;
+        margin: 0 auto;
+        height: unset;
+        width: 100%;
+        .novedad {
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 1em;
+        }
+        .contenedor-videos-index {
+            display: flex;
+            width: 100%;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+            align-items: center;
+            justify-content: space-around;
+            .pizzaparty {
+                width: 100%;
+                height: unset;
+                margin-bottom: 2rem;
+                border: none;
+            }
+            .video-index {
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+            .logo-novedad {
+                width: 100%;
+                display: none;
+            }
+        }
+    }
+
+    .footer {
+        height: unset;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-info {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+
+    #footer-redes {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-hora {
+        width: 100%;
+        height: auto;
+    }
+
+    #footer-phone {
+        padding: 0;
+    }
+
+    #footer-ubicacion {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+
+    footer p {
+        letter-spacing: 0;
+    }
+
+    #footer-ubicacion h3,
+    #footer-hora h3 {
+        font-size: 18px;
+    }
+
+    .scroll-up-container {
+        display: none;
+    }
+
+    .body-menu{
+        background-color: map-get($colores , secundario);
+        display: block;
+        margin: 0;
+        padding-right: 0;
+        height: unset;
+        width: 100%;
+        background: none;
+    }
+
+    .contenedor-h1-menu{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .nuestro-menu {
+        padding: 20px;
+        font-size: 3em;
+        width: 100%;
+    }
+
+    #menu-section-top {
+        display: flex;
+        width: 100%;
+        height: unset;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        .img-menu {
+            margin: 0 auto 1rem;
+            width: 90%;
+        }
+    }
+    
+    .menu-section-bottom {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+        .menu-img{
+            margin: 0 auto 1rem;
+            width: 100%;
+        }
+    }    
+
+    .card-container-top{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        height: unset;
+        background-image: linear-gradient(to left, #783e75, #983c77, #b83972, #d43867, #eb3f55, #ec424c, #ec4543, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+            
+        .card-container {
+            margin: 1rem 0;
+        }
+    }
+    .card-container-bottom {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        flex-wrap: wrap;
+        height: unset;
+        background-image: linear-gradient(to left, #783e75, #983c77, #b83972, #d43867, #eb3f55, #ec424c, #ec4543, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+        .card-container {
+            margin: 1rem 0;    
+        }
+    }
+    
+    .body-nosotros {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: unset;
+    }
+    .nosotros-main {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        flex-direction: column;
+        .nosotros-historia {
+            margin: 2rem 1rem;
+        }
+    }
+
+    .nosotros-conocenos {
+        color: map-get($colores, detalles-naranja);
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        font-size: 3em;
+        .conocenos-span {
+            display: none;
+        }
+    }
+    
+    .section-fotos {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 1 auto;
+        gap: 20px;
+        width: 100%;
+        .img-nosotros {
+            width: 100%;  
+        }
+    }
+
+    #img-masas {
+        display: none;
+    }
+
+    .section-videos {
+        background: none;
+        background-color: map-get($colores , primario);;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: unset;
+        .video-nosotros {
+            height: unset;
+            width: 80%;
+            margin: 1rem 0;
+            border: none;
+        }
+    }
+
+    .body-promos {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: unset;
+    }
+    .promo-h1 {
+        width: 100%;
+        padding: 20px;
+        font-size: 3em;
+    }
+
+    .promo-section-top {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0 auto;
+        background-image: linear-gradient(to right, #ff5733, #ec4939, #d83d3d, #c3333f, #ae2a3f);
+        .promo-img {
+            margin: 0 auto 1rem;
+            width: 90%;
+            height: unset;
+        }
+    }
+
+    .promo-section-bottom {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(to right, #ff5733, #ec4939, #d83d3d, #c3333f, #ae2a3f);
+        .promo-img {
+            margin: 0 auto 1rem;
+            width: 90%;
+            height: unset;
+        }
+    }
+    
+    
+
+    .medio-pago {
+        width: 100%;
+        padding: 20px;
+        font-size: 3em;
+    }
+
+    .section-mediopagos{
+        background: none;
+        width: 100%;
+        height: unset;
+        display: flex;
+        background-color: map-get($colores , primario);
+        flex-wrap: wrap;
+    }
+
+    .caja-efectivo,
+    .tarjetas,
+    .mercado-pago{
+        width: 100%;
+        margin: 1rem auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: unset;
+        border: none;
+        box-shadow: none;
+    }
+
+    .body-contacto {
+        display: block;
+        width: 100%;
+        margin: 0;
+        height: unset;
+    }
+
+    .contacto-h1{
+        width: 100%;
+        padding: 20px;
+        font-size: 3em;
+        color:map-get($colores, detalles-naranja);
+    }
+
+    .contacto-h1 span{
+        display: none;
+    }
+
+    .contenedor-banner{ 
+        width: 100%;
+        height: unset;
+    }
+    .main-contacto{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: none;
+        background-color: map-get($colores , primario);;
+
+    }
+    .form-contacto{
+        margin: 1rem 0;
+    }
+
+    .boton-contacto {
+        width: 50%;
+    }
+
+    .mapa {
+        width: 100%;
+    }
+
+    .contenedor-mapa {
+        width: 100%
+    }
+
+}   
