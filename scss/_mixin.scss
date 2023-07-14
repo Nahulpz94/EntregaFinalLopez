@@ -5,8 +5,14 @@
     align-items: $vertical;
 }
 
-@mixin medidas ($ancho, $alto, $margen){
+@mixin medidas ($ancho, $alto,){
     width: $ancho;
     height: $alto;
-    margin: $margen;
+}
+
+@mixin margenes ($top, $right, $bottom, $left){
+    margin-top: $top;
+    margin-right: $right ; 
+    margin-bottom: $bottom;
+    margin-left: $left;
 }
