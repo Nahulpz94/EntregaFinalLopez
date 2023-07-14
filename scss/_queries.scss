@@ -1,5 +1,5 @@
 /*media movil*/
-@media (min-width:320px) and (max-width: 576px){
+@media (min-width:320px) and (max-width: 600px){
 
     .body-index{
         display: block;
@@ -23,7 +23,7 @@
 
     .container {
         width: 100%;
-        margin: 0 auto;
+        margin: 0;
     }
     .navbar-brand {
         display: flex;
@@ -40,7 +40,6 @@
     }
 
     .navbar-toggler{
-        margin-right: 3em;
         margin-top: 2em;
     }
 
@@ -48,7 +47,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 150px;
+        width: 120px;
         height: unset;
     }
 
@@ -202,14 +201,14 @@
     }
 
     .contenedor-h1-menu{
-        height: 100%;
+        height: auto;
         width: 100%;
     }
 
 
     .nuestro-menu {
         padding: 20px;
-        font-size: 3em;
+        font-size: 2em;
         width: 100%;
     }
 
@@ -236,7 +235,7 @@
         margin: 0 auto;
         .menu-img{
             margin: 0 auto 1rem;
-            width: 100%;
+            width: 90%;
         }
     }    
 
