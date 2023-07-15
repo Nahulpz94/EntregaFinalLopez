@@ -1,0 +1,168 @@
+/*fondo index*/
+
+.body-index {
+    width: 100%;
+    background-image: url(../imgs/Main/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-rows: auto 1fr auto;  
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";
+    min-height: 100vh;
+    .main-index {/*seccion principal*/
+        background-image: url(../imgs/Main/fondo-volvimos.jpg); 
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;  
+        flex-wrap: wrap;
+        @include medidas (90%, 600px);
+        color: map-get($colores , salmon-claro) ;
+        margin: 0 auto;
+    
+        .main-overlay {/*overlay main*/
+            @include medidas (100%, 600px);
+            background-color: rgba(map-get($colores , secundario), 0.9);
+            margin: 0 auto;
+        }
+    
+        .contenedor-volvimos{
+            position: relative;
+            @include flex-center(flex, space-around, center);
+            flex-direction: column;
+            @include medidas (100%, 370px);
+            font-size: 32px;
+            margin: 50px auto 0;
+            padding: 0px;
+            font-family: 'Roboto', sans-serif;
+            h3 {
+                position: relative;
+                font-size: 30px;
+                text-align: center;
+                letter-spacing: 8px;
+                animation-name: bounceInLeft;
+                animation-duration: 2s;
+            }
+        }
+    
+        .texto-index {/*parrafo*/
+            display: flex;
+            @include medidas (100%, unset);
+            letter-spacing: 1px;
+            color: map-get($colores , terciario);
+            font-size: 24px;
+            text-align: center;
+            font-family: 'Roboto', sans-serif;
+        }
+        .volvimos {/* h1 main*/
+            @include flex-center(flex, center, center);
+            letter-spacing: 15px;
+            font-weight: bold;
+            @include medidas (100%, 100px);
+            color: map-get($colores , terciario);
+            font-size: 90px;
+            margin-top: 10px;
+            font-family: 'Roboto', sans-serif;
+            animation-name: bounceInRight;
+            animation-duration: 2s;
+            span {
+                    color:map-get($colores, detalles-naranja);
+                }
+        }
+        .contenedor-botones-index {/* botones main*/
+            @include flex-center(flex, center, center);
+            height: 40px;
+            width: 100%;
+            animation-name: zoomInUp;
+            animation-duration: 2s;
+            a { 
+                @include flex-center(flex, center, center);
+                color: map-get($colores , terciario);
+                font-size: 24px;
+                height: 40px;
+                background-color: map-get($colores, detalles-naranja);
+                border-radius: 10px;
+                margin: 20px;
+                padding: 5px;
+                text-decoration: none;
+                }
+                
+                .boton {
+                    @include flex-center(flex, center, center);
+                    width: 180px;
+                    letter-spacing: 2px;
+                    transition: 0.3s ease;
+                    @include shadow (50px, 5px);
+                &:hover {
+                    transform:scale(1.1);
+                    color: map-get($colores , terciario) ;
+                    background-image: radial-gradient(circle, #ff5733, #f24d2a, #e54322, #d83919, #cb2f10);
+                    }
+                }
+            }
+        }
+    
+    .index-section-bottom {/* seccion novedades */
+        display: flex;
+        flex-direction: column;
+        background-color:map-get($colores , primario);
+        font-size: 40px;
+        @include medidas (90%, unset);
+        margin: 0 auto;
+        padding-bottom: 20px;
+        
+        /*novedades h3*/
+        h3 {
+            @include flex-center(flex, center, center);
+            color: map-get($colores , terciario);
+            margin-top: 10px;
+            margin-bottom: 30px;
+            transition: 0.9s ease-in-out;
+    
+        }
+        .novedad {
+            font-size: larger;
+            letter-spacing: 2px;
+            @include medidas (100%, 50px);
+            animation-name: heartBeat;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        .contenedor-videos-index {
+            @include medidas (100%, 620px);
+            @include flex-center (flex, space-around,center);
+    
+            .pizzaparty {/*foto pizza party */
+                display: flex;
+                @include medidas (500px, 600px);
+                border: #000000 1px solid;
+                box-shadow: 1px 1px 20px map-get($colores, secundario );
+                transition: 0.9s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            .video-index {/* video novedades */
+                display: flex;
+                border: #000000 1px solid;
+                @include medidas (500px, 600px);
+                padding: 15px; 
+                top: 0px; 
+                box-shadow: 1px 1px 20px map-get($colores, secundario);
+                transition: 0.9s ease-in-out;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .logo-novedad { /*foto novedades */
+            display: flex;
+            @include medidas (450px, 600px);
+            }
+        }
+    }
+}
+/* aplicado mixins flex, medidas, */

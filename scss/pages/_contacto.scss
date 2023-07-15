@@ -1,0 +1,166 @@
+
+/*estilo contacto*/
+
+.body-contacto {
+    background-image: url(../imgs/Contacto/fondo-contacto.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contacto-h1 { /*texto contacto*/
+        display: flex;
+        justify-content: center;
+        color:map-get($colores , terciario);
+        background-color: map-get($colores , secundario);
+        margin: 0 auto;
+        padding: 40px;
+        font-size: 60px;
+        width: 90%;  
+        span {
+            color: map-get($colores , detalles-naranja);
+        }  
+    }
+    .contenedor-banner { /*banner contacto*/
+        width: 90%;
+        margin: 0 auto;
+        .banner-contacto {
+            width: 100%;
+        }
+    }
+    
+    .main-contacto {/*main contacto*/
+        background-image: url(../imgs/Promos/fondo-pagos.png);
+        background-size: cover;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px;
+    
+        .form-contacto{    /*formulario de contacto*/
+            padding: 14px;
+            font-size: 20px;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            box-shadow: 0 0 15px black;
+            .campo {     /*campo*/
+            font-family: "Poppins", sans-serif;
+            font-weight: bolder;
+            text-align: center;
+            color: map-get($colores , terciario);
+            background-color: map-get($colores , secundario);
+            width: 80%;
+            padding: 10px;
+            border: 1px solid map-get($colores , secundario);
+            margin: 10px 0;
+            border-radius: 5px;
+            &::placeholder {
+                font-family:"Poppins", sans-serif;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: #ffffff;
+                text-align: center;
+            }
+            &:hover {
+                color: map-get($colores , terciario);
+                font-family: "Poppins", sans-serif;
+                transition: 0.2s ease;
+                transform: scale(1.05);
+            }
+            &:focus{
+                outline: none;
+                box-shadow: 0 0 10px 0 black;
+                transition: 1s ease;
+                color: map-get($colores , terciario);
+                text-align: center;
+                &::placeholder {
+                    transition: 0.1s ease;
+                    font-family:"Poppins", sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: transparent;
+                    text-align: center;
+                }
+            }
+            }
+            .caja-mensaje { /*mensaje*/
+                font-family: "Poppins", sans-serif ;
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: bolder;
+                text-align: center;
+                color: map-get($colores , terciario);
+                width: 80%;
+                height: 180px;
+                resize: none;
+                border: 1px solid map-get($colores , secundario);
+                background-color: map-get($colores , secundario);
+                border-radius: 5px;
+                &:hover {   
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    transition: 0.2s ease;
+                    transform: scale(1.05);
+                    color: #000000;
+                }
+                &:focus{    
+                    outline: none;
+                    box-shadow: 0 0 10px 0 black;
+                    transition: 1s ease;
+                    color: map-get($colores , terciario);
+                    text-align: center;
+                    &::placeholder {
+                        transition: 0.1s ease;
+                        font-family:"Poppins", sans-serif;
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        color: transparent;
+                        text-align: center;
+                    }
+                }
+                &::placeholder {
+                    font-family:"Poppins", sans-serif;
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    color: map-get($colores , terciario);
+                    text-align: center;
+                }
+            }
+            .boton-contacto {
+                font-family:"Poppins", sans-serif;
+                font-size: 16px;
+                font-weight: bolder;
+                letter-spacing: 1px;
+                width: 30%;
+                margin: 10px;
+                padding: 10px;
+                color: map-get($colores , terciario);
+                background-color: map-get($colores, detalles-naranja);
+                border-radius: 5px;
+                box-shadow: 0px 0px 10px 0px map-get($colores , secundario);
+                border: 1px solid map-get($colores , secundario);
+                &:hover {
+                    font-family:"Poppins", sans-serif;
+                    letter-spacing: 2px;
+                    color: map-get($colores , salmon-claro) ;
+                    background-color: map-get($colores , secundario);
+                    transition: 0.3s ease;
+                    transform: scale(1.05);
+                }
+            }
+        }
+        .contenedor-mapa {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            box-shadow: 0 0 10px 0 black;
+            .mapa {
+                width: 90%;
+            }
+        }
+    }
+}
+
+
