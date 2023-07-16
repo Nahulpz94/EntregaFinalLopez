@@ -61,8 +61,12 @@
             </div>
         </nav>
     </header>
+    
     <!-- cierre header-->
-    <h1 class="contacto-h1"><span>¡</span>CONTACTANOS<span>!</span></h1>
+
+    <div animate__animated animate__bounceInUp class="contenedor-h1-contacto">
+    <h1 animate__animated animate__fadeInUp class="contacto-h1"><span>¡</span>CONTACTANOS<span>!</span></h1>
+    </div>
     <div class="contenedor-banner">
         <img class="banner-contacto" src="../imgs/Contacto/banner.png">
     </div>
@@ -72,12 +76,14 @@
             <input type="text" name="nombre" required placeholder="Nombre" class="campo" oninvalid="setCustomValidity('Ingresá tú Nombre')" oninput="setCustomValidity('')">
             <input type="email" name="email" required placeholder="Correo" class="campo" oninvalid="setCustomValidity('Ingresá tú e-mail')" oninput="setCustomValidity('')">
             <textarea type="text" name="mensaje" required placeholder="Dejanos tú Opinión" class="caja-mensaje" oninvalid="setCustomValidity('Escribe un Mensaje')" oninput="setCustomValidity('')"></textarea>
-            <button id="submit-button" type="submit" class="boton-contacto">Enviar Mensaje</button>    
+            <button id="submit-button" type="submit" class="boton-contacto">Enviar Mensaje</button> 
+
         </form>
         <div class="contenedor-mapa" id="mapa" >
             <iframe class="mapa" src="https://www.google.com/maps/d/u/0/embed?mid=10liXg0Kuyj0gXHFbhbyx8tQxNAJsFE8&ehbc=2E312F" width="" height="406"></iframe>
         </div>
     </main>  
+
     <!--cierre main-->
 
     <footer class="footer" id="footer">

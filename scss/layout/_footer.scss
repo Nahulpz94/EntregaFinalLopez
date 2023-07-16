@@ -110,11 +110,14 @@
         position: fixed;
         bottom: 16px;
         right: 16px;
-        a img:hover {
+        transition: 0.5s ease;
+        &:hover {
             background-color: map-get($colores, detalles-naranja);
-            border-radius: 100%;
-            transition: 0.3s ease;
-            transform: scale(0.9);
+            border-radius: 100%; 
+            transform: scale(1.1);  
+            
+
+
         }
     }
 }

@@ -1,6 +1,19 @@
 /*VARIABLES*/ /*MIXINS*/ /*MAPAS*/ /* fuente*/
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,900&display=swap");
+/*GENERALES*/
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
 .header { /*header*/
   position: sticky;
   top: 0;
@@ -82,19 +95,6 @@
   color: #9A3061;
   opacity: 0.7;
   transform: scale(1.09);
-}
-
-/*GENERALES*/
-html {
-  scroll-behavior: smooth;
-}
-
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
 }
 
 /*fondo index*/
@@ -201,10 +201,11 @@ html {
   justify-content: center;
   align-items: center;
   width: 180px;
+  height: unset;
   letter-spacing: 2px;
   transition: 0.3s ease;
-  border-radius: 50px;
-  box-shadow: 5px 5px 10px #1C3334;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px #1C3334;
 }
 .body-index .main-index .contenedor-botones-index .boton:hover {
   transform: scale(1.1);
@@ -236,8 +237,8 @@ html {
   letter-spacing: 2px;
   width: 100%;
   height: 50px;
-  animation-name: heartBeat;
-  animation-duration: 3s;
+  animation-name: Beat;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
 }
 .body-index .index-section-bottom .contenedor-videos-index {
@@ -259,14 +260,14 @@ html {
   transform: scale(1.05);
 }
 .body-index .index-section-bottom .contenedor-videos-index .video-index { /* video novedades */
-  display: flex;
   border: #000000 1px solid;
   width: 500px;
   height: 600px;
   padding: 15px;
   top: 0px;
-  box-shadow: 1px 1px 20px #1C3334;
   transition: 0.9s ease-in-out;
+  border-radius: 2px;
+  box-shadow: 5px 5px 10px #1C3334;
 }
 .body-index .index-section-bottom .contenedor-videos-index .video-index:hover {
   transform: scale(1.05);
@@ -389,12 +390,12 @@ html {
   position: fixed;
   bottom: 16px;
   right: 16px;
+  transition: 0.5s ease;
 }
-.footer .scroll-up-container a img:hover {
+.footer .scroll-up-container:hover {
   background-color: #FF5733;
   border-radius: 100%;
-  transition: 0.3s ease;
-  transform: scale(0.9);
+  transform: scale(1.1);
 }
 
 #body-menu { /*estilos menu*/
@@ -709,55 +710,91 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.body-promos .promo-h1 { /*promociones*/
-  display: flex;
-  justify-content: center;
+.body-promos .contenedor-h1-promos {
+  width: 90%;
+  height: unset;
   color: #F5F5F5;
   background-color: #1C3334;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
   margin: 0 auto;
+}
+.body-promos .contenedor-h1-promos .promo-h1 { /*promociones*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 40px;
   font-size: 60px;
-  width: 90%;
+  animation-name: bounceIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  margin-bottom: 0;
 }
-.body-promos .promo-h1 span {
+.body-promos .contenedor-h1-promos .promo-h1 span {
   color: #FF5733;
 }
 .body-promos .promo-section-top { /*seccion superior*/
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 90%;
-  justify-content: space-between;
+  height: 750px;
+  padding: 0 10px;
+  width: 90%;
   margin: 0 auto;
   background-color: #FF5733;
+  animation-name: bounceInUp;
+  animation-duration: 3s;
 }
 .body-promos .promo-section-top .promo-img {
   width: 100%;
   height: 700px;
-  margin: 5px;
-  box-shadow: 0 0 10px grey;
+  margin: 10px;
+  transition: 1.03s ease;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
+}
+.body-promos .promo-section-top .promo-img:hover {
+  transform: scale(1.02);
 }
 .body-promos .promo-section-bottom { /*seccion*/
-  display: flex;
   width: 90%;
-  justify-content: space-between;
+  height: 750px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1rem;
+  animation-name: bounceInUp;
+  animation-duration: 3s;
   margin: 0 auto;
   background-color: #FF5733;
 }
 .body-promos .promo-section-bottom .promo-img {
   width: 100%;
   height: 700px;
-  margin: 5px;
-  box-shadow: 0 0 10px grey;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
+  transition: 1.03s ease;
 }
-.body-promos .medio-pago { /*estilo medios de pago*/
-  color: #F5F5F5;
+.body-promos .promo-section-bottom .promo-img:hover {
+  transform: scale(1.02);
+}
+.body-promos .contenedor-h2-mediospago { /*estilo medios de pago*/
   background-color: #1C3334;
+  margin: 0 auto;
+  width: 90%;
+  padding: 40px;
+}
+.body-promos .contenedor-h2-mediospago .medio-pago {
+  color: #F5F5F5;
   font-size: 50px;
   text-align: center;
-  padding: 40px;
-  width: 90%;
-  margin: 0 auto;
+  animation-name: bounceIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
-.body-promos .medio-pago span {
+.body-promos .contenedor-h2-mediospago .medio-pago span {
   color: #FF5733;
 }
 .body-promos .section-mediopagos { /*medios de pago*/
@@ -863,36 +900,51 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.body-contacto .contacto-h1 { /*texto contacto*/
-  display: flex;
-  justify-content: center;
+.body-contacto .contenedor-h1-contacto {
+  width: 90%;
+  height: unset;
   color: #F5F5F5;
   background-color: #1C3334;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  margin: 0 auto;
+}
+.body-contacto .contenedor-h1-contacto .contacto-h1 { /*texto contacto*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   padding: 40px;
   font-size: 60px;
-  width: 90%;
+  animation-name: bounceIn;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
-.body-contacto .contacto-h1 span {
+.body-contacto .contenedor-h1-contacto .contacto-h1 span {
   color: #FF5733;
 }
 .body-contacto .contenedor-banner { /*banner contacto*/
   width: 90%;
+  height: unset;
   margin: 0 auto;
 }
 .body-contacto .contenedor-banner .banner-contacto {
   width: 100%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
 }
 .body-contacto .main-contacto { /*main contacto*/
   background-image: url(../imgs/Promos/fondo-pagos.png);
   background-size: cover;
   width: 90%;
   height: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 20px;
+  margin: 0 auto;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
 }
 .body-contacto .main-contacto .form-contacto { /*formulario de contacto*/
   padding: 14px;
@@ -900,7 +952,9 @@ html {
   width: 100%;
   height: 100%;
   text-align: center;
-  box-shadow: 0 0 15px black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
+  border: 1px solid #1C3334;
 }
 .body-contacto .main-contacto .form-contacto .campo { /*campo*/
   font-family: "Poppins", sans-serif;
@@ -909,21 +963,21 @@ html {
   color: #F5F5F5;
   background-color: #1C3334;
   width: 80%;
+  height: 100%;
   padding: 10px;
   border: 1px solid #1C3334;
   margin: 10px 0;
   border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
 }
 .body-contacto .main-contacto .form-contacto .campo::placeholder {
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
-  color: #ffffff;
+  color: #F5F5F5;
   text-align: center;
 }
 .body-contacto .main-contacto .form-contacto .campo:hover {
   color: #F5F5F5;
-  font-family: "Poppins", sans-serif;
   transition: 0.2s ease;
   transform: scale(1.05);
 }
@@ -936,14 +990,12 @@ html {
 }
 .body-contacto .main-contacto .form-contacto .campo:focus::placeholder {
   transition: 0.1s ease;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: transparent;
   text-align: center;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje { /*mensaje*/
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: bolder;
@@ -955,64 +1007,66 @@ html {
   border: 1px solid #1C3334;
   background-color: #1C3334;
   border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje:hover {
-  font-family: Georgia, "Times New Roman", Times, serif;
   transition: 0.2s ease;
   transform: scale(1.05);
-  color: #000000;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje:focus {
   outline: none;
-  box-shadow: 0 0 10px 0 black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
   transition: 1s ease;
   color: #F5F5F5;
   text-align: center;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje:focus::placeholder {
   transition: 0.1s ease;
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: transparent;
   text-align: center;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje::placeholder {
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   letter-spacing: 1px;
   color: #F5F5F5;
   text-align: center;
 }
 .body-contacto .main-contacto .form-contacto .boton-contacto {
-  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: bolder;
   letter-spacing: 1px;
   width: 30%;
+  height: unset;
   margin: 10px;
   padding: 10px;
   color: #F5F5F5;
   background-color: #FF5733;
   border-radius: 5px;
-  box-shadow: 0px 0px 10px 0px #1C3334;
+  box-shadow: 2px 2px 4px #1C3334;
   border: 1px solid #1C3334;
+  transition: 0.3s ease;
 }
 .body-contacto .main-contacto .form-contacto .boton-contacto:hover {
-  font-family: "Poppins", sans-serif;
   letter-spacing: 2px;
   color: #FFD3B5;
   background-color: #1C3334;
-  transition: 0.3s ease;
   transform: scale(1.05);
 }
 .body-contacto .main-contacto .contenedor-mapa {
-  padding: 10px;
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 10px 0 black;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
+  border: 1px solid #1C3334;
+  padding: 10px;
+  margin-left: 1rem;
 }
 .body-contacto .main-contacto .contenedor-mapa .mapa {
   width: 90%;

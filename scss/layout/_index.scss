@@ -92,10 +92,10 @@
                 
                 .boton {
                     @include flex-center(flex, center, center);
-                    width: 180px;
+                    @include medidas (180px, unset);
                     letter-spacing: 2px;
                     transition: 0.3s ease;
-                    @include shadow (50px, 5px);
+                    @include shadow (5px, 10px);
                 &:hover {
                     transform:scale(1.1);
                     color: map-get($colores , terciario) ;
@@ -127,8 +127,8 @@
             font-size: larger;
             letter-spacing: 2px;
             @include medidas (100%, 50px);
-            animation-name: heartBeat;
-            animation-duration: 3s;
+            animation-name: Beat;
+            animation-duration: 4s;
             animation-iteration-count: infinite;
         }
         
@@ -147,13 +147,12 @@
                 }
             }
             .video-index {/* video novedades */
-                display: flex;
                 border: #000000 1px solid;
                 @include medidas (500px, 600px);
                 padding: 15px; 
                 top: 0px; 
-                box-shadow: 1px 1px 20px map-get($colores, secundario);
                 transition: 0.9s ease-in-out;
+                @include shadow (2px, 5px);
                 &:hover{
                     transform: scale(1.05);
                 }
