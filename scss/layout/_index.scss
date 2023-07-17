@@ -82,11 +82,7 @@
                 @include flex-center(flex, center, center);
                 color: map-get($colores , terciario);
                 font-size: 24px;
-                height: 40px;
                 background-color: map-get($colores, detalles-naranja);
-                border-radius: 10px;
-                margin: 20px;
-                padding: 5px;
                 text-decoration: none;
                 }
                 
@@ -94,12 +90,14 @@
                     @include flex-center(flex, center, center);
                     @include medidas (180px, unset);
                     letter-spacing: 2px;
-                    transition: 0.3s ease;
+                    margin: 20px;
+                    transition: 0.5s ease;
                     @include shadow (5px, 10px);
+                    border-radius: 5px;                    
                 &:hover {
                     transform:scale(1.1);
-                    color: map-get($colores , terciario) ;
-                    background-image: radial-gradient(circle, #ff5733, #f24d2a, #e54322, #d83919, #cb2f10);
+                    color: map-get($colores , terciario) ;  
+                    background-image: linear-gradient(to right, #ff5733, #f34f2c, #e84724, #dc3f1d, #d13715);
                     }
                 }
             }
@@ -164,4 +162,3 @@
         }
     }
 }
-/* aplicado mixins flex, medidas, */

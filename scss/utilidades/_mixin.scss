@@ -29,3 +29,18 @@
     line-height: $line-height;
     font-family: $font-family;
 }
+
+@mixin boton($background-color, $text-color) {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: $background-color;
+    color: $text-color;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    @include shadow (5px, 2px);
+    &:hover {
+
+    background-color: darken($background-color, 10%);
+    }
+}

@@ -189,11 +189,7 @@ html {
   align-items: center;
   color: #F5F5F5;
   font-size: 24px;
-  height: 40px;
   background-color: #FF5733;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 5px;
   text-decoration: none;
 }
 .body-index .main-index .contenedor-botones-index .boton {
@@ -203,14 +199,16 @@ html {
   width: 180px;
   height: unset;
   letter-spacing: 2px;
-  transition: 0.3s ease;
+  margin: 20px;
+  transition: 0.5s ease;
   border-radius: 5px;
   box-shadow: 10px 10px 20px #1C3334;
+  border-radius: 5px;
 }
 .body-index .main-index .contenedor-botones-index .boton:hover {
   transform: scale(1.1);
   color: #F5F5F5;
-  background-image: radial-gradient(circle, #ff5733, #f24d2a, #e54322, #d83919, #cb2f10);
+  background-image: linear-gradient(to right, #ff5733, #f34f2c, #e84724, #dc3f1d, #d13715);
 }
 .body-index .index-section-bottom { /* seccion novedades */
   display: flex;
@@ -278,7 +276,6 @@ html {
   height: 600px;
 }
 
-/* aplicado mixins flex, medidas, */
 /*estilos del footer*/
 .footer {
   display: flex;
@@ -289,7 +286,7 @@ html {
   background-color: #FFD3B5;
   justify-content: space-between;
   align-items: center;
-  margin: 0;
+  margin-top: 2px;
 }
 .footer a { /* enlaces */
   color: #783E75;
@@ -451,7 +448,7 @@ html {
 #body-menu .card-container-top .card-container {
   position: relative;
   width: 286px;
-  height: 280px;
+  height: 270px;
 }
 #body-menu .card-container-top .card-container .card-1 {
   position: absolute;
@@ -467,26 +464,27 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid #1C3334;
-  box-shadow: 5px 5px 15px;
+  border: 1px solid rgb(56, 54, 54);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   border-radius: 5px;
   backface-visibility: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   background-color: #FF5733;
-  padding: 10px 15px 15px 15px;
+  padding: 10px 15px 0 15px;
 }
 #body-menu .card-container-top .card-container .card-1 .card-front img {
   border: 1px solid #1C3334;
-  border-radius: 3px;
-  box-shadow: 1px 1px 15px;
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
 }
 #body-menu .card-container-top .card-container .card-1 .card-body {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #body-menu .card-container-top .card-container .card-1 .card-body p {
@@ -495,7 +493,6 @@ html {
   font-size: 20px;
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 5px;
 }
 #body-menu .card-container-top .card-container .card-back {
   position: absolute;
@@ -526,7 +523,7 @@ html {
 #body-menu .card-container-bottom .card-container {
   position: relative;
   width: 286px;
-  height: 280px;
+  height: 270px;
 }
 #body-menu .card-container-bottom .card-container .card-1 {
   position: absolute;
@@ -542,26 +539,27 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 1px solid #1C3334;
-  box-shadow: 5px 5px 15px;
+  border: 1px solid rgb(56, 54, 54);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   border-radius: 5px;
   backface-visibility: hidden;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   background-color: #FF5733;
-  padding: 10px 15px 15px 15px;
+  padding: 10px 15px 0 15px;
 }
 #body-menu .card-container-bottom .card-container .card-1 .card-front img {
   border: 1px solid #1C3334;
-  border-radius: 3px;
-  box-shadow: 1px 1px 15px;
+  border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
 }
 #body-menu .card-container-bottom .card-container .card-1 .card-body {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
 #body-menu .card-container-bottom .card-container .card-1 .card-body p {
@@ -570,7 +568,6 @@ html {
   font-size: 20px;
   letter-spacing: 2px;
   text-align: center;
-  margin-top: 5px;
 }
 #body-menu .card-container-bottom .card-container .card-back {
   position: absolute;
@@ -926,9 +923,12 @@ html {
 .body-contacto .contenedor-banner { /*banner contacto*/
   width: 90%;
   height: unset;
-  margin: 0 auto;
+  margin: 1px auto 2px;
 }
 .body-contacto .contenedor-banner .banner-contacto {
+  animation-name: slideInUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
   width: 100%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
@@ -943,6 +943,9 @@ html {
   align-items: center;
   padding: 20px;
   margin: 0 auto;
+  animation-name: slideInUp;
+  animation-duration: 1.9s;
+  animation-timing-function: ease-in;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #1C3334;
 }
@@ -1105,7 +1108,7 @@ html {
     letter-spacing: 2px;
   }
   .header nav .container .offcanvas-backdrop.fade.show {
-    display: none;
+    background-color: #1C3334;
   }
   .header nav .container .navbar-nav {
     width: 100%;
@@ -1139,18 +1142,25 @@ html {
     height: unset;
     padding: 0 2em;
   }
-  .body-index .main-index .main-overlay .volvimos {
-    text-align: left;
+  .body-index .main-index .main-overlay .contenedor-volvimos {
+    width: 100%;
     height: unset;
+    margin-top: 1em;
+  }
+  .body-index .main-index .main-overlay .contenedor-volvimos .volvimos {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: unset;
+    text-align: left;
     font-size: 2em;
-    animation-name: none;
     color: #FFD3B5;
   }
-  .body-index .main-index .main-overlay .volvimos-h3 {
-    animation-name: none;
+  .body-index .main-index .main-overlay .contenedor-volvimos .volvimos .volvimos-span {
+    font-size: 1em;
+  }
+  .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
     font-size: 1em;
     height: unset;
     color: #F8B195;
@@ -1289,7 +1299,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     height: unset;
-    background-image: linear-gradient(to left, #783e75, #983c77, #b83972, #d43867, #eb3f55, #ec424c, #ec4543, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+    background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
   #body-menu .card-container-top .card-container {
     margin: 1rem 0;
@@ -1301,7 +1311,7 @@ html {
     align-items: center;
     flex-wrap: wrap;
     height: unset;
-    background-image: linear-gradient(to left, #783e75, #983c77, #b83972, #d43867, #eb3f55, #ec424c, #ec4543, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+    background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
   #body-menu .card-container-bottom .card-container {
     margin: 1rem 0;
@@ -1321,20 +1331,23 @@ html {
   .body-nosotros .nosotros-main .nosotros-historia {
     margin: 2rem 1rem;
   }
-  .body-nosotros .nosotros-conocenos {
-    color: #FF5733;
+  .body-nosotros .contenedor-h1-nosotros {
+    padding: 15px;
     width: 100%;
+  }
+  .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos {
+    color: #FF5733;
     margin: 0;
-    padding: 20px;
     font-size: 3em;
   }
-  .body-nosotros .nosotros-conocenos .conocenos-span {
+  .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos .conocenos-span {
     display: none;
   }
   .body-nosotros .section-fotos {
+    width: 100%;
+    height: unset;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     margin: 1 auto;
     gap: 20px;
     width: 100%;
@@ -1347,6 +1360,7 @@ html {
     background-color: #AE2A3F;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     width: 100%;
     height: unset;
   }
@@ -1361,20 +1375,27 @@ html {
     width: 100%;
     margin: 0;
     height: unset;
+    background-image: none;
+    background-color: #AE2A3F;
   }
-  .body-promos .promo-h1 {
-    width: 100%;
+  .body-promos .contenedor-h1-promos {
     padding: 20px;
+    width: 100%;
+    height: unset;
+  }
+  .body-promos .contenedor-h1-promos .promo-h1 {
     font-size: 3em;
   }
   .body-promos .promo-section-top {
     width: 100%;
+    height: unset;
+    padding-top: 30px;
     display: flex;
+    justify-content: space-around;
+    align-items: space-around;
     flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
     margin: 0 auto;
-    background-image: linear-gradient(to right, #ff5733, #ec4939, #d83d3d, #c3333f, #ae2a3f);
+    background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
   .body-promos .promo-section-top .promo-img {
     margin: 0 auto 1rem;
@@ -1383,54 +1404,65 @@ html {
   }
   .body-promos .promo-section-bottom {
     width: 100%;
+    height: unset;
+    padding-top: 4px;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, #ff5733, #ec4939, #d83d3d, #c3333f, #ae2a3f);
+    flex-direction: column;
+    background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
   .body-promos .promo-section-bottom .promo-img {
     margin: 0 auto 1rem;
     width: 90%;
     height: unset;
   }
-  .body-promos .medio-pago {
+  .body-promos .contenedor-h2-mediospago {
     width: 100%;
+    height: auto;
+  }
+  .body-promos .contenedor-h2-mediospago .medio-pago {
     padding: 20px;
     font-size: 3em;
   }
   .body-promos .section-mediopagos {
-    background: none;
     width: 100%;
     height: unset;
+    padding-bottom: 10px;
+    background: none;
     display: flex;
-    background-color: #AE2A3F;
     flex-wrap: wrap;
   }
-  .body-promos .caja-efectivo,
-  .body-promos .tarjetas,
-  .body-promos .mercado-pago {
-    width: 100%;
-    margin: 1rem auto;
+  .body-promos .section-mediopagos .caja-efectivo,
+  .body-promos .section-mediopagos .tarjetas,
+  .body-promos .section-mediopagos .mercado-pago {
+    background-color: #AE2A3F;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: unset;
-    border: none;
-    box-shadow: none;
+    width: 60%;
+    height: 250px;
+    margin: 1rem auto;
+    border: 1px solid #1C3334;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px #1C3334;
   }
+  /*contacto breakpoint a 360-380px, ver de solucionar*/
   .body-contacto {
     display: block;
     width: 100%;
     margin: 0;
     height: unset;
   }
-  .body-contacto .contacto-h1 {
+  .body-contacto .contenedor-h1-contacto {
     width: 100%;
-    padding: 20px;
+    padding: 15px;
+  }
+  .body-contacto .contenedor-h1-contacto .contacto-h1 {
     font-size: 3em;
     color: #FF5733;
   }
-  .body-contacto .contacto-h1 .contacto-h1 span {
+  .body-contacto .contenedor-h1-contacto .contacto-h1 .contacto-h1 span {
     display: none;
   }
   .body-contacto .contenedor-banner {
@@ -1438,8 +1470,10 @@ html {
     height: unset;
   }
   .body-contacto .main-contacto {
-    width: 100%;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     flex-direction: column;
     flex-wrap: wrap;
     background: none;
@@ -1451,10 +1485,12 @@ html {
   .body-contacto .main-contacto .form-contacto .boton-contacto {
     width: 50%;
   }
-  .body-contacto .contenedor-mapa {
+  .body-contacto .main-contacto .contenedor-mapa {
     width: 100%;
+    margin: 0 auto;
+    padding: 0;
   }
-  .body-contacto .contenedor-mapa .mapa {
+  .body-contacto .main-contacto .contenedor-mapa .mapa {
     width: 100%;
   }
   /*cierre body-contacto*/

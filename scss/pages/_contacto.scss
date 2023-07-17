@@ -28,8 +28,11 @@
     }
     .contenedor-banner { /*banner contacto*/
         @include medidas (90%, unset);
-        margin: 0 auto;
+        margin: 1px auto 2px;
         .banner-contacto {
+            animation-name: slideInUp;
+            animation-duration: 1.5s;
+            animation-timing-function: ease-in;
             width: 100%;
             @include shadow (5px, 5px);
         }
@@ -42,6 +45,9 @@
         @include flex-center(flex, space-evenly,center);
         padding: 20px;
         margin: 0 auto;
+        animation-name: slideInUp;
+        animation-duration: 1.9s;
+        animation-timing-function: ease-in;
         @include shadow (5px, 2px);
     
         .form-contacto{    /*formulario de contacto*/

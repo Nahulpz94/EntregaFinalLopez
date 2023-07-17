@@ -29,7 +29,7 @@
                     letter-spacing: 2px;
                     }
                     .offcanvas-backdrop.fade.show{
-                        display:none;
+                        background-color: map-get($colores, secundario);
                     }
                     .navbar-nav{
                         width: 100%;
@@ -64,27 +64,28 @@
             height: unset;
             .main-overlay {
                 height: unset;
-                padding: 0 2em;          
-                .volvimos {
-                    text-align: left;
-                    height: unset;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    font-size: 2em;
-                    animation-name: none;
-                    color:map-get($colores , salmon-claro) ;    
-                }
-                .volvimos-h3 {
-                    animation-name: none;
-                    font-size: 1em;
-                    height: unset;
-                    color: map-get($colores , salmon-oscuro);
-    
+                padding: 0 2em;  
+                .contenedor-volvimos {
+                    @include medidas (100%, unset);
+                    margin-top: 1em;
+                    .volvimos {
+                        @include flex-center (flex, center, center);
+                        @include medidas (100%, unset);
+                        text-align: left;
+                        font-size: 2em;
+                        color:map-get($colores , salmon-claro) ; 
+                        .volvimos-span{
+                            font-size: 1em
+                        }
+                    }
+                    .volvimos-h3 {
+                        font-size: 1em;
+                        height: unset;
+                        color: map-get($colores , salmon-oscuro);
+                    }
                 }
                 .contenedor-botones-index{
                     height: unset;
-    
                 }
             }
         }
@@ -225,7 +226,7 @@
         align-items: center;
         flex-wrap: wrap;
         height: unset;
-        background-image: linear-gradient(to left, #783e75, #983c77, #b83972, #d43867, #eb3f55, #ec424c, #ec4543, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+        background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             
         .card-container {
             margin: 1rem 0;
@@ -238,7 +239,7 @@
         align-items: center;
         flex-wrap: wrap;
         height: unset;
-        background-image: linear-gradient(to left, #783e75, #983c77, #b83972, #d43867, #eb3f55, #ec424c, #ec4543, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
+        background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
         .card-container {
             margin: 1rem 0;    
         }
@@ -259,20 +260,22 @@
                 margin: 2rem 1rem;
             }
         }
+        .contenedor-h1-nosotros{
+            padding: 15px;
+            width: 100%;
         .nosotros-conocenos {
             color: map-get($colores, detalles-naranja);
-            width: 100%;
             margin: 0;
-            padding: 20px;
             font-size: 3em;
             .conocenos-span {
                 display: none;
             }
         }
+        }
         .section-fotos {
+            @include medidas (100%, unset);
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
             margin: 1 auto;
             gap: 20px;
             width: 100%;
@@ -286,6 +289,7 @@
             background-color: map-get($colores , primario);;
             display: flex;
             flex-direction: column;
+            flex-wrap: wrap;
             width: 100%;
             height: unset;
             .video-nosotros {
@@ -297,93 +301,89 @@
         }
     }
     
-
     
-    
-    
-
-
-
-    
-
     .body-promos {
         display: block;
         width: 100%;
         margin: 0;
         height: unset;
-        .promo-h1 {
-            width: 100%;
+        background-image: none;
+        background-color: map-get($colores , primario);
+
+        .contenedor-h1-promos {
             padding: 20px;
+            @include medidas (100%, unset);
+            .promo-h1 {
             font-size: 3em;
+            }
         }
         .promo-section-top {
-            width: 100%;
-            display: flex;
+            @include medidas (100%, unset);
+            padding-top: 30px;
+            @include flex-center (flex, space-around, space-around);
             flex-direction: column;
-            flex-wrap: wrap;
-            align-items: center;
             margin: 0 auto;
-            background-image: linear-gradient(to right, #ff5733, #ec4939, #d83d3d, #c3333f, #ae2a3f);
+            background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             .promo-img {
                 margin: 0 auto 1rem;
-                width: 90%;
-                height: unset;
+                @include medidas (90%, unset);
             }
         }
         .promo-section-bottom {
-            width: 100%;
-            display: flex;
+            @include medidas (100%, unset);
+            padding-top: 4px;
+            @include flex-center (flex, center, center);
             flex-direction: column;
-            align-items: center;
-            background-image: linear-gradient(to right, #ff5733, #ec4939, #d83d3d, #c3333f, #ae2a3f);
+            background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             .promo-img {
                 margin: 0 auto 1rem;
-                width: 90%;
-                height: unset;
+                @include medidas (90%, unset);
             }
         }
-        .medio-pago {
-            width: 100%;
-            padding: 20px;
-            font-size: 3em;
+
+        .contenedor-h2-mediospago{
+                @include medidas (100%, auto);
+            .medio-pago {
+                padding: 20px;
+                font-size: 3em;
+            }
         }
         .section-mediopagos{
+            @include medidas (100%, unset);
+            padding-bottom: 10px;
             background: none;
-            width: 100%;
-            height: unset;
             display: flex;
-            background-color: map-get($colores , primario);
             flex-wrap: wrap;
-        }
-        .caja-efectivo,
+            .caja-efectivo,
         .tarjetas,
         .mercado-pago{
-            width: 100%;
+            background-color: map-get($colores, primario);
+            @include flex-center(flex, center, center);
+            @include medidas (60%, 250px);
             margin: 1rem auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: unset;
-            border: none;
-            box-shadow: none;
+            border: 1px solid map-get($colores, secundario );
+            @include shadow (5px, 4px);
         }
+        }
+        
     }
     
-
+/*contacto breakpoint a 360-380px, ver de solucionar*/
     .body-contacto {
         display: block;
         width: 100%;
         margin: 0;
         height: unset;
         
-        .contacto-h1{
+        .contenedor-h1-contacto {
             width: 100%;
-            padding: 20px;
-            font-size: 3em;
-            color:map-get($colores, detalles-naranja);
-            
-            .contacto-h1 span{
-                display: none;
+            padding: 15px;
+            .contacto-h1{
+                font-size: 3em;
+                color:map-get($colores, detalles-naranja);
+                .contacto-h1 span{
+                    display: none;
+                }
             }
         }
         .contenedor-banner{ 
@@ -391,8 +391,8 @@
             height: unset;
         }
         .main-contacto{
+            @include flex-center(flex, center,center);
             width: 100%;
-            display: flex;
             flex-direction: column;
             flex-wrap: wrap;
             background: none;
@@ -404,13 +404,16 @@
                 width: 50%;
                 }
             }
-        }
-        .contenedor-mapa{
-            width: 100%;
-            .mapa {
+            .contenedor-mapa{
                 width: 100%;
+                margin: 0 auto;
+                padding: 0;
+                .mapa {
+                    width: 100%;
+                }
             }
         }
+        
     }/*cierre body-contacto*/
 } /*cierre querie*/  
 
