@@ -1151,7 +1151,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
     height: unset;
     font-size: 3rem;
     padding: 0;
@@ -1163,7 +1163,7 @@ html {
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
     font-size: 24px;
-    width: 95%;
+    width: 90%;
     height: unset;
     color: #F8B195;
   }
@@ -1262,6 +1262,9 @@ html {
     letter-spacing: 0;
   }
   .footer .scroll-up-container {
+    position: fixed;
+    bottom: 6px;
+    right: 6px;
     width: 30px;
     height: 30px;
     border-radius: 50%;

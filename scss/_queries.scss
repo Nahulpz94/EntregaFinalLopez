@@ -68,7 +68,7 @@
                     @include medidas (100%, unset);
                     .volvimos {
                         @include flex-center (flex, center, center);
-                        @include medidas (100%, unset);
+                        @include medidas (90%, unset);
                         font-size: 3rem;
                         padding: 0;
                         margin-bottom: 20px;
@@ -79,7 +79,7 @@
                     }
                     .volvimos-h3 {
                         font-size: 24px;
-                        width: 95%;
+                        width: 90%;
                         height: unset;
                         color: map-get($colores , salmon-oscuro);
                     }
@@ -182,6 +182,9 @@
             }
         }
         .scroll-up-container{
+            position: fixed;
+            bottom: 6px;
+            right: 6px;
             width: 30px;
             height: 30px;
             border-radius: 50%;
