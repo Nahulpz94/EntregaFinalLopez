@@ -68,6 +68,7 @@
                 border: 1px solid map-get($colores , secundario);
                 margin: 10px 0;
                 @include shadow (5px, 2px);
+                transition: 0.4s ease;
                 &::placeholder {
                     font-size: 16px;
                     letter-spacing: 1px;
@@ -76,7 +77,6 @@
                 }
                 &:hover {
                 color: map-get($colores , terciario);
-                transition: 0.2s ease;
                 transform: scale(1.05);
                 }
                 &:focus{
@@ -95,9 +95,8 @@
                 }
             }
             .caja-mensaje { /*mensaje*/
-                font-size: 16px;
+                @include tipografia(16px, unset, bolder);
                 line-height: 20px;
-                font-weight: bolder;
                 text-align: center;
                 color: map-get($colores , terciario);
                 @include medidas(80%, 180px);
@@ -106,8 +105,8 @@
                 background-color: map-get($colores , secundario);
                 border-radius: 5px;
                 @include shadow (5px, 2px);
+                transition: 0.4s ease;
                 &:hover {   
-                    transition: 0.2s ease;
                     transform: scale(1.05);
                 }
                 &:focus{    
@@ -131,27 +130,25 @@
                     text-align: center;
                 }
             }
-            .boton-contacto {
-                font-size: 16px;
-                font-weight: bolder;
-                letter-spacing: 1px;
-                @include medidas (30%, unset);
-                margin: 10px;
-                padding: 10px;
-                color: map-get($colores , terciario);
-                background-color: map-get($colores, detalles-naranja);
-                @include shadow (5px, 2px);
-                border: 1px solid map-get($colores , secundario);
-                transition: 0.3s ease;
-                &:hover {
+            .contenedor-boton-contacto{
+                        @include medidas (100%, 60px);
+                        @include flex-center(flex, center, center);
+                .boton-contacto {
+                    border: 1px solid map-get($colores, secundario );
+                    font-weight: bolder;
                     letter-spacing: 2px;
-                    color: map-get($colores , salmon-claro) ;
-                    background-color: map-get($colores , secundario);
-                    transform: scale(1.05);
+                    font-size: 20px;
+                    @include medidas (40%, unset);
+                    transition: 0.6s ease;
+                    @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
+                    &:hover {
+                        transform: scale(1.05);
+                        color: map-get($colores , salmon-claro) ;
+                        background-color: map-get($colores , secundario);
+                    }
                 }
             }
         }
-
 
         .contenedor-mapa {
             @include flex-center(flex,center, center);
@@ -162,6 +159,7 @@
             margin-left: 1rem;
             .mapa {
                 width: 90%;
+                @include shadow(5px, 5px);
             }
         }
     }

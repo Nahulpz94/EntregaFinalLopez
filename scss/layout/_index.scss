@@ -37,7 +37,7 @@
             margin: 50px auto 0;
             padding: 0px;
             h3 {
-                @include tipografia(30px, 1.5, 'Roboto, sans-serif', bolder);
+                @include tipografia(30px, 'Roboto, sans-serif', bolder);
                 position: relative;
                 text-align: center;
                 letter-spacing: 8px;
@@ -56,7 +56,7 @@
             font-family: 'Roboto', sans-serif;
         }
         .volvimos {/* h1 main*/
-            @include tipografia(90px, 1.5, 'Roboto', bold);
+            @include tipografia(90px, 'Roboto', bold);
             @include flex-center(flex, center, center);
             letter-spacing: 15px;
             @include medidas (100%, 100px);
@@ -82,17 +82,17 @@
                 }
                 
                 .boton {
-                    @include flex-center(flex, center, center);
+                    @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
                     @include medidas (180px, unset);
                     letter-spacing: 2px;
                     margin: 20px;
                     transition: 0.5s ease;
-                    @include shadow (5px, 10px);
-                    border-radius: 5px;                    
+                    @include shadow (5px, 2px, salmon-claro);          
                 &:hover {
                     transform:scale(1.1);
-                    color: map-get($colores , terciario) ;  
-                    background-image: linear-gradient(to right, #ff5733, #f34f2c, #e84724, #dc3f1d, #d13715);
+                    @include shadow (5px, 4px, salmon-oscuro);
+                    color: map-get($colores , terciario);  
+                    background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
                     }
                 }
             }

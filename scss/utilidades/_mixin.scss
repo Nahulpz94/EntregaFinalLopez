@@ -5,12 +5,10 @@
     align-items: $vertical;
 }
 
-
 @mixin medidas ($ancho, $alto,){
     width: $ancho;
     height: $alto;
 }
-
 
 @mixin margenes ($top, $right, $bottom, $left){
     margin-top: $top;
@@ -19,30 +17,24 @@
     margin-left: $left;
 }
 
-
-@mixin shadow ($radius, $eje) {
+@mixin shadow ($radius, $eje, $color: secundario) {
     border-radius: $radius;
-    box-shadow: $eje $eje ($eje*2)map-get($colores , secundario),
+    box-shadow: $eje $eje ($eje*2)map-get($colores , $color),
 }
 
-@mixin tipografia ($font-size, $line-height, $font-family, $font-weight){
+@mixin tipografia ($font-size, $font-family, $font-weight){
     font-size: $font-size;
-    line-height: $line-height;
     font-family: $font-family;
     font-weight: $font-weight;
 }
 
 @mixin boton($background-color, $text-color) {
-    display: inline-block;
-    padding: 10px 20px;
+    @include flex-center(flex, center , center);
+    padding: 4px 0;
     background-color: $background-color;
     color: $text-color;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
     @include shadow (5px, 2px);
-    &:hover {
-
-    background-color: darken($background-color, 10%);
-    }
 }

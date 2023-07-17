@@ -18,6 +18,8 @@ html {
   top: 0;
   z-index: 100;
   display: flex;
+  border-radius: 0;
+  box-shadow: 4px 4px 8px #1C3334;
   background-color: #AE2A3F;
   border-bottom: 1px solid #1C3334;
   width: 100%;
@@ -37,6 +39,7 @@ html {
 .header nav {
   display: flex;
   justify-content: space-evenly;
+  align-items: unset;
   width: 100%;
 }
 .header nav .navbar-toggler-icon {
@@ -57,16 +60,20 @@ html {
   color: #FFD3B5;
   margin: 30px;
   padding: 0 5px;
+  transition: 0.6s ease;
   text-decoration: none;
 }
 .header nav ul li a:hover {
-  color: #FF5733 3;
-  transition: 0.4s ease;
+  color: #F5F5F5;
   transform: scale(1.2);
+  border: 1px solid #FF5733;
+  border-radius: 5px;
 }
 .header nav ul li a#active {
   color: #F5F5F5;
   background-color: #FF5733;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px #1C3334;
   border-radius: 5px;
 }
 .header #logo-redes {
@@ -138,7 +145,6 @@ html {
 }
 .body-index .main-index .contenedor-volvimos h3 {
   font-size: 30px;
-  line-height: 1.5;
   font-family: "Roboto, sans-serif";
   font-weight: bolder;
   position: relative;
@@ -159,7 +165,6 @@ html {
 }
 .body-index .main-index .volvimos { /* h1 main*/
   font-size: 90px;
-  line-height: 1.5;
   font-family: "Roboto";
   font-weight: bold;
   display: flex;
@@ -198,19 +203,28 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 4px 0;
+  background-color: #FF5733;
+  color: #F5F5F5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
   width: 180px;
   height: unset;
   letter-spacing: 2px;
   margin: 20px;
   transition: 0.5s ease;
   border-radius: 5px;
-  box-shadow: 10px 10px 20px #1C3334;
-  border-radius: 5px;
+  box-shadow: 2px 2px 4px #FFD3B5;
 }
 .body-index .main-index .contenedor-botones-index .boton:hover {
   transform: scale(1.1);
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px #F8B195;
   color: #F5F5F5;
-  background-image: linear-gradient(to right, #ff5733, #f34f2c, #e84724, #dc3f1d, #d13715);
+  background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
 }
 .body-index .index-section-bottom { /* seccion novedades */
   display: flex;
@@ -979,6 +993,7 @@ html {
   margin: 10px 0;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #1C3334;
+  transition: 0.4s ease;
 }
 .body-contacto .main-contacto .form-contacto .campo::placeholder {
   font-size: 16px;
@@ -988,7 +1003,6 @@ html {
 }
 .body-contacto .main-contacto .form-contacto .campo:hover {
   color: #F5F5F5;
-  transition: 0.2s ease;
   transform: scale(1.05);
 }
 .body-contacto .main-contacto .form-contacto .campo:focus {
@@ -1007,8 +1021,9 @@ html {
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje { /*mensaje*/
   font-size: 16px;
-  line-height: 20px;
+  font-family: unset;
   font-weight: bolder;
+  line-height: 20px;
   text-align: center;
   color: #F5F5F5;
   width: 80%;
@@ -1019,9 +1034,9 @@ html {
   border-radius: 5px;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #1C3334;
+  transition: 0.4s ease;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje:hover {
-  transition: 0.2s ease;
   transform: scale(1.05);
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje:focus {
@@ -1045,26 +1060,37 @@ html {
   color: #F5F5F5;
   text-align: center;
 }
-.body-contacto .main-contacto .form-contacto .boton-contacto {
-  font-size: 16px;
+.body-contacto .main-contacto .form-contacto .contenedor-boton-contacto {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.body-contacto .main-contacto .form-contacto .contenedor-boton-contacto .boton-contacto {
+  border: 1px solid #1C3334;
   font-weight: bolder;
-  letter-spacing: 1px;
-  width: 30%;
+  letter-spacing: 2px;
+  font-size: 20px;
+  width: 40%;
   height: unset;
-  margin: 10px;
-  padding: 10px;
-  color: #F5F5F5;
+  transition: 0.6s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 0;
   background-color: #FF5733;
+  color: #F5F5F5;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #1C3334;
-  border: 1px solid #1C3334;
-  transition: 0.3s ease;
 }
-.body-contacto .main-contacto .form-contacto .boton-contacto:hover {
-  letter-spacing: 2px;
+.body-contacto .main-contacto .form-contacto .contenedor-boton-contacto .boton-contacto:hover {
+  transform: scale(1.05);
   color: #FFD3B5;
   background-color: #1C3334;
-  transform: scale(1.05);
 }
 .body-contacto .main-contacto .contenedor-mapa {
   display: flex;
@@ -1080,6 +1106,8 @@ html {
 }
 .body-contacto .main-contacto .contenedor-mapa .mapa {
   width: 90%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
 }
 
 /*media movil*/
