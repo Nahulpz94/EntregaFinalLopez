@@ -1153,15 +1153,15 @@ html {
     align-items: center;
     width: 100%;
     height: unset;
-    text-align: left;
-    font-size: 2em;
+    font-size: 3rem;
     color: #FFD3B5;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos .volvimos-span {
     font-size: 1em;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
-    font-size: 1em;
+    font-size: 2rem;
+    width: 95%;
     height: unset;
     color: #F8B195;
   }
@@ -1183,7 +1183,8 @@ html {
   }
   .body-index .index-section-bottom .contenedor-videos-index {
     display: flex;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
     flex-direction: column;
     flex-wrap: wrap;
     height: auto;
@@ -1257,6 +1258,14 @@ html {
   }
   .footer #footer-ubicacion p {
     letter-spacing: 0;
+  }
+  .footer .scroll-up-container {
+    width: 50px;
+    height: 50px;
+  }
+  .footer .scroll-up-container img {
+    width: 50px;
+    height: 50px;
   }
   #body-menu .contenedor-h1-menu {
     height: auto;
@@ -1440,7 +1449,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 60%;
+    width: 85%;
     height: 250px;
     margin: 1rem auto;
     border: 1px solid #1C3334;

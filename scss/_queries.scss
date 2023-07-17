@@ -71,15 +71,15 @@
                     .volvimos {
                         @include flex-center (flex, center, center);
                         @include medidas (100%, unset);
-                        text-align: left;
-                        font-size: 2em;
+                        font-size: 3rem;
                         color:map-get($colores , salmon-claro) ; 
                         .volvimos-span{
                             font-size: 1em
                         }
                     }
                     .volvimos-h3 {
-                        font-size: 1em;
+                        font-size: 2rem;
+                        width: 95%;
                         height: unset;
                         color: map-get($colores , salmon-oscuro);
                     }
@@ -104,7 +104,8 @@
             }
             .contenedor-videos-index {
                 display: flex;
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
                 flex-direction: column;
                 flex-wrap: wrap;
                 height: auto;
@@ -180,7 +181,14 @@
                 letter-spacing: 0;
             }
         }
-        
+        .scroll-up-container{
+            width: 50px;
+            height: 50px;
+            img{
+                width: 50px;
+                height: 50px;
+            }
+        }
     }
 
     #body-menu {
@@ -354,12 +362,12 @@
             background: none;
             display: flex;
             flex-wrap: wrap;
-            .caja-efectivo,
+        .caja-efectivo,
         .tarjetas,
         .mercado-pago{
             background-color: map-get($colores, primario);
             @include flex-center(flex, center, center);
-            @include medidas (60%, 250px);
+            @include medidas (85%, 250px);
             margin: 1rem auto;
             border: 1px solid map-get($colores, secundario );
             @include shadow (5px, 4px);
