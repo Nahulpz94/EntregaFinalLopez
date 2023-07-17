@@ -1154,13 +1154,15 @@ html {
     width: 100%;
     height: unset;
     font-size: 3rem;
+    padding: 0;
+    margin: 0;
     color: #FFD3B5;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos .volvimos-span {
-    font-size: 1em;
+    font-size: 3rem;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
-    font-size: 2rem;
+    font-size: 24px;
     width: 95%;
     height: unset;
     color: #F8B195;

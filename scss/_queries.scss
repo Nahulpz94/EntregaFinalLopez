@@ -72,13 +72,15 @@
                         @include flex-center (flex, center, center);
                         @include medidas (100%, unset);
                         font-size: 3rem;
+                        padding: 0;
+                        margin: 0;
                         color:map-get($colores , salmon-claro) ; 
                         .volvimos-span{
-                            font-size: 1em
+                            font-size: 3rem
                         }
                     }
                     .volvimos-h3 {
-                        font-size: 2rem;
+                        font-size: 24px;
                         width: 95%;
                         height: unset;
                         color: map-get($colores , salmon-oscuro);
