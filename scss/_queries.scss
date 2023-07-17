@@ -52,7 +52,6 @@
         }
     }
 
-
     .body-index{
         display: block;
         width: 100%;
@@ -67,13 +66,12 @@
                 padding: 0 2em;  
                 .contenedor-volvimos {
                     @include medidas (100%, unset);
-                    margin-top: 1em;
                     .volvimos {
                         @include flex-center (flex, center, center);
                         @include medidas (100%, unset);
                         font-size: 3rem;
                         padding: 0;
-                        margin: 0;
+                        margin-bottom: 20px;
                         color:map-get($colores , salmon-claro) ; 
                         .volvimos-span{
                             font-size: 3rem
@@ -184,11 +182,12 @@
             }
         }
         .scroll-up-container{
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
             img{
-                width: 50px;
-                height: 50px;
+                width: 30px;
+                height: 30px;
             }
         }
     }

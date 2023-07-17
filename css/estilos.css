@@ -20,7 +20,7 @@ html {
   z-index: 100;
   display: flex;
   background-color: #AE2A3F;
-  border-bottom: 1px solid #9A3061;
+  border-bottom: 1px solid #1C3334;
   width: 100%;
   margin: 0 auto;
   height: 100px;
@@ -57,6 +57,7 @@ html {
   letter-spacing: 2px;
   color: #FFD3B5;
   margin: 30px;
+  padding: 0 5px;
   text-decoration: none;
 }
 .header nav ul li a:hover {
@@ -67,7 +68,7 @@ html {
 .header nav ul li a#active {
   color: #F5F5F5;
   background-color: #FF5733;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .header #logo-redes {
   display: flex;
@@ -1145,7 +1146,6 @@ html {
   .body-index .main-index .main-overlay .contenedor-volvimos {
     width: 100%;
     height: unset;
-    margin-top: 1em;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos {
     display: flex;
@@ -1155,7 +1155,7 @@ html {
     height: unset;
     font-size: 3rem;
     padding: 0;
-    margin: 0;
+    margin-bottom: 20px;
     color: #FFD3B5;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos .volvimos-span {
@@ -1262,12 +1262,13 @@ html {
     letter-spacing: 0;
   }
   .footer .scroll-up-container {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
   }
   .footer .scroll-up-container img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
   }
   #body-menu .contenedor-h1-menu {
     height: auto;
