@@ -11,7 +11,6 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  font-weight: bold;
 }
 
 .header { /*header*/
@@ -134,14 +133,15 @@ html {
   flex-direction: column;
   width: 100%;
   height: 370px;
-  font-size: 32px;
   margin: 50px auto 0;
   padding: 0px;
-  font-family: "Roboto", sans-serif;
 }
 .body-index .main-index .contenedor-volvimos h3 {
-  position: relative;
   font-size: 30px;
+  line-height: 1.5;
+  font-family: "Roboto, sans-serif";
+  font-weight: bolder;
+  position: relative;
   text-align: center;
   letter-spacing: 8px;
   animation-name: bounceInLeft;
@@ -158,17 +158,18 @@ html {
   font-family: "Roboto", sans-serif;
 }
 .body-index .main-index .volvimos { /* h1 main*/
+  font-size: 90px;
+  line-height: 1.5;
+  font-family: "Roboto";
+  font-weight: bold;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 15px;
-  font-weight: bold;
   width: 100%;
   height: 100px;
   color: #F5F5F5;
-  font-size: 90px;
   margin-top: 10px;
-  font-family: "Roboto", sans-serif;
   animation-name: bounceInRight;
   animation-duration: 2s;
 }
@@ -179,8 +180,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
   width: 100%;
+  height: 40px;
   animation-name: zoomInUp;
   animation-duration: 2s;
 }
@@ -213,11 +214,12 @@ html {
 }
 .body-index .index-section-bottom { /* seccion novedades */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
-  background-color: #AE2A3F;
-  font-size: 40px;
   width: 90%;
   height: unset;
+  background-color: #AE2A3F;
   margin: 0 auto;
   padding-bottom: 20px;
   /*novedades h3*/
@@ -228,17 +230,14 @@ html {
   align-items: center;
   color: #F5F5F5;
   margin-top: 10px;
+  font-size: 40px;
   margin-bottom: 30px;
   transition: 0.9s ease-in-out;
 }
 .body-index .index-section-bottom .novedad {
-  font-size: larger;
-  letter-spacing: 2px;
   width: 100%;
   height: 50px;
-  animation-name: Beat;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
+  letter-spacing: 2px;
 }
 .body-index .index-section-bottom .contenedor-videos-index {
   width: 100%;
@@ -248,11 +247,12 @@ html {
   align-items: center;
 }
 .body-index .index-section-bottom .contenedor-videos-index .pizzaparty { /*foto pizza party */
-  display: flex;
   width: 500px;
   height: 600px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 20px #1C3334;
   border: #000000 1px solid;
-  box-shadow: 1px 1px 20px #1C3334;
+  display: flex;
   transition: 0.9s ease-in-out;
 }
 .body-index .index-section-bottom .contenedor-videos-index .pizzaparty:hover {
@@ -456,7 +456,7 @@ html {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 #body-menu .card-container-top .card-container .card-1:hover {
   transform: rotateY(180deg);
@@ -496,6 +496,9 @@ html {
   text-align: center;
 }
 #body-menu .card-container-top .card-container .card-back {
+  border: 1px solid rgb(56, 54, 54);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -531,7 +534,7 @@ html {
   width: 100%;
   height: 100%;
   transform-style: preserve-3d;
-  transition: 2s ease;
+  transition: 1s ease;
 }
 #body-menu .card-container-bottom .card-container .card-1:hover {
   transform: rotateY(180deg);
@@ -571,6 +574,9 @@ html {
   text-align: center;
 }
 #body-menu .card-container-bottom .card-container .card-back {
+  border: 1px solid rgb(56, 54, 54);
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -1081,6 +1087,7 @@ html {
   .header {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
   }
@@ -1156,15 +1163,17 @@ html {
     font-size: 3rem;
     padding: 0;
     margin-bottom: 20px;
+    letter-spacing: 5px;
     color: #FFD3B5;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos .volvimos-span {
     font-size: 3rem;
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
-    font-size: 24px;
-    width: 90%;
+    width: 100%;
     height: unset;
+    font-size: 24px;
+    letter-spacing: 0;
     color: #F8B195;
   }
   .body-index .main-index .main-overlay .contenedor-botones-index {
@@ -1173,8 +1182,8 @@ html {
   .body-index .index-section-bottom {
     display: block;
     margin: 0 auto;
-    height: unset;
     width: 100%;
+    height: unset;
   }
   .body-index .index-section-bottom .novedad {
     display: flex;
@@ -1185,13 +1194,13 @@ html {
   }
   .body-index .index-section-bottom .contenedor-videos-index {
     display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 90%;
+    height: auto;
     margin: 0 auto;
     flex-direction: column;
     flex-wrap: wrap;
-    height: auto;
-    align-items: center;
-    justify-content: space-around;
   }
   .body-index .index-section-bottom .contenedor-videos-index .pizzaparty {
     width: 100%;
@@ -1214,11 +1223,11 @@ html {
     flex-direction: column;
   }
   .footer .footer-info {
-    margin-top: 15px;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
     font-size: 18px;
   }
   .footer .footer-info #footer-phone {
@@ -1249,10 +1258,10 @@ html {
   }
   .footer #footer-ubicacion {
     display: flex;
-    flex-direction: column;
-    font-size: 14px;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    font-size: 14px;
     height: auto;
   }
   .footer #footer-ubicacion h3 {
@@ -1274,22 +1283,23 @@ html {
     height: 30px;
   }
   #body-menu .contenedor-h1-menu {
-    height: auto;
+    padding: 20px;
     width: 100%;
+    height: auto;
   }
   #body-menu .contenedor-h1-menu .nuestro-menu {
     padding: 20px;
     font-size: 3em;
     width: 100%;
+    height: auto;
   }
   #body-menu #menu-section-top {
-    display: flex;
     width: 100%;
-    height: unset;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
+    height: auto;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
   }
   #body-menu #menu-section-top .img-menu {
     margin: 0 auto 1rem;
@@ -1297,9 +1307,9 @@ html {
   }
   #body-menu .menu-section-bottom {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     width: 100%;
     margin: 0 auto;
   }
@@ -1309,11 +1319,11 @@ html {
   }
   #body-menu .card-container-top {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
     height: unset;
+    flex-flow: column wrap;
     background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
   #body-menu .card-container-top .card-container {
@@ -1321,21 +1331,21 @@ html {
   }
   #body-menu .card-container-bottom {
     display: flex;
-    flex-direction: column;
-    width: 100%;
+    justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    width: 100%;
     height: unset;
+    flex-flow: column wrap;
     background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
   #body-menu .card-container-bottom .card-container {
     margin: 1rem 0;
   }
   .body-nosotros {
-    display: block;
     width: 100%;
-    margin: 0;
     height: unset;
+    display: block;
+    margin: 0;
   }
   .body-nosotros .nosotros-main {
     display: flex;
@@ -1347,16 +1357,11 @@ html {
     margin: 2rem 1rem;
   }
   .body-nosotros .contenedor-h1-nosotros {
-    padding: 15px;
     width: 100%;
   }
   .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos {
-    color: #FF5733;
     margin: 0;
     font-size: 3em;
-  }
-  .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos .conocenos-span {
-    display: none;
   }
   .body-nosotros .section-fotos {
     width: 100%;
@@ -1365,36 +1370,35 @@ html {
     flex-direction: column;
     margin: 1 auto;
     gap: 20px;
-    width: 100%;
   }
   .body-nosotros .section-fotos .img-nosotros {
     width: 100%;
   }
   .body-nosotros .section-videos {
-    background: none;
-    background-color: #AE2A3F;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: unset;
+    background: none;
+    background-color: #AE2A3F;
+    flex-flow: column wrap;
   }
   .body-nosotros .section-videos .video-nosotros {
-    height: unset;
     width: 80%;
+    height: unset;
     margin: 1rem 0;
     border: none;
   }
   .body-promos {
-    display: block;
     width: 100%;
-    margin: 0;
     height: unset;
+    display: block;
+    margin: 0;
     background-image: none;
     background-color: #AE2A3F;
   }
   .body-promos .contenedor-h1-promos {
-    padding: 20px;
     width: 100%;
     height: unset;
   }
@@ -1420,10 +1424,10 @@ html {
   .body-promos .promo-section-bottom {
     width: 100%;
     height: unset;
-    padding-top: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-top: 4px;
     flex-direction: column;
     background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
   }
@@ -1433,11 +1437,11 @@ html {
     height: unset;
   }
   .body-promos .contenedor-h2-mediospago {
+    padding: 20px;
     width: 100%;
     height: auto;
   }
   .body-promos .contenedor-h2-mediospago .medio-pago {
-    padding: 20px;
     font-size: 3em;
   }
   .body-promos .section-mediopagos {
@@ -1451,12 +1455,12 @@ html {
   .body-promos .section-mediopagos .caja-efectivo,
   .body-promos .section-mediopagos .tarjetas,
   .body-promos .section-mediopagos .mercado-pago {
-    background-color: #AE2A3F;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 85%;
     height: 250px;
+    background-color: #AE2A3F;
     margin: 1rem auto;
     border: 1px solid #1C3334;
     border-radius: 5px;
@@ -1464,18 +1468,17 @@ html {
   }
   /*contacto breakpoint a 360-380px, ver de solucionar*/
   .body-contacto {
-    display: block;
     width: 100%;
-    margin: 0;
     height: unset;
+    display: block;
+    margin: 0;
   }
   .body-contacto .contenedor-h1-contacto {
     width: 100%;
-    padding: 15px;
+    background-color: #1C3334;
   }
   .body-contacto .contenedor-h1-contacto .contacto-h1 {
     font-size: 3em;
-    color: #FF5733;
   }
   .body-contacto .contenedor-h1-contacto .contacto-h1 .contacto-h1 span {
     display: none;
@@ -1484,13 +1487,16 @@ html {
     width: 100%;
     height: unset;
   }
+  .body-contacto .contenedor-banner .banner-contacto {
+    width: 100%;
+    height: 150px;
+  }
   .body-contacto .main-contacto {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-flow: column wrap;
     background: none;
     background-color: #AE2A3F;
   }

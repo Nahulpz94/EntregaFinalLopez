@@ -2,10 +2,8 @@
 @media (min-width:320px) and (max-width: 600px){
 
     .header {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        height: auto;
+        @include flex-center(flex, center,center);
+        @include medidas (100%, auto);
         nav {
             width: 100%;
             padding: 0;
@@ -32,16 +30,12 @@
                         background-color: map-get($colores, secundario);
                     }
                     .navbar-nav{
-                        width: 100%;
-                        height: 80%;
+                        @include medidas (100%, 80%);
                         align-items: center!important;
                         justify-content: center;
                         .nav-link {
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            width: 120px;
-                            height: unset;
+                            @include flex-center (flex, center, center);
+                            @include medidas (120px, unset);
                         }
                     }
                     #logo-redes {
@@ -72,15 +66,16 @@
                         font-size: 3rem;
                         padding: 0;
                         margin-bottom: 20px;
+                        letter-spacing: 5px;
                         color:map-get($colores , salmon-claro) ; 
                         .volvimos-span{
                             font-size: 3rem
                         }
                     }
                     .volvimos-h3 {
+                        @include medidas (100%, unset);
                         font-size: 24px;
-                        width: 90%;
-                        height: unset;
+                        letter-spacing: 0;
                         color: map-get($colores , salmon-oscuro);
                     }
                 }
@@ -93,8 +88,7 @@
         .index-section-bottom {
             display: block;
             margin: 0 auto;
-            height: unset;
-            width: 100%;
+            @include medidas (100%, unset);
             .novedad {
                 display: flex;
                 align-items: center;
@@ -103,17 +97,13 @@
                 animation-name: none;
             }
             .contenedor-videos-index {
-                display: flex;
-                width: 90%;
+                @include flex-center(flex, space-around, center);
+                @include medidas (90%, auto);
                 margin: 0 auto;
                 flex-direction: column;
                 flex-wrap: wrap;
-                height: auto;
-                align-items: center;
-                justify-content: space-around;
                 .pizzaparty {
-                    width: 100%;
-                    height: unset;
+                    @include medidas (100%, unset);
                     margin-bottom: 2rem;
                     border: none;
                 }
@@ -134,11 +124,9 @@
         display: flex;
         flex-direction: column;
         .footer-info {
+            @include flex-center(flex, center, center);
             margin-top: 15px;
-            display: flex;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
             font-size: 18px;
             #footer-phone {
                 font-size: 18px;
@@ -168,11 +156,9 @@
             }
         }
         #footer-ubicacion {
-            display: flex;
+            @include flex-center(flex, center, center);
             flex-direction: column;
             font-size: 14px;
-            justify-content: center;
-            align-items: center;
             height: auto;
             h3{
                 font-size: 18px;
@@ -197,32 +183,26 @@
 
     #body-menu {
     .contenedor-h1-menu{
-        height: auto;
-        width: 100%;
+        padding: 20px;
+        @include medidas (100%, auto);
         .nuestro-menu {
             padding: 20px;
             font-size: 3em;
-            width: 100%;
+            @include medidas (100%, auto)
         }
     }
     #menu-section-top {
-        display: flex;
-        width: 100%;
-        height: unset;
-        flex-direction: column;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+        @include medidas (100%, auto);
+        @include flex-center(flex, center, center);
+        flex-flow: column wrap;
         .img-menu {
             margin: 0 auto 1rem;
             width: 90%;
         }
     }
     .menu-section-bottom {
-        display: flex;
-        flex-direction: column;
+        @include flex-center(flex, center, center);
         flex-wrap: wrap;
-        align-items: center;
         width: 100%;
         margin: 0 auto;
         .menu-img{
@@ -232,12 +212,9 @@
     }  
     
     .card-container-top{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        height: unset;
+        @include flex-center(flex, center, center);
+        @include medidas (100%, unset);
+        flex-flow: column wrap;
         background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             
         .card-container {
@@ -245,12 +222,9 @@
         }
     }
     .card-container-bottom {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-        flex-wrap: wrap;
-        height: unset;
+        @include flex-center(flex, center, center);
+        @include medidas (100%, unset);
+        flex-flow: column wrap;
         background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
         .card-container {
             margin: 1rem 0;    
@@ -259,10 +233,9 @@
 }
     
     .body-nosotros {
+        @include medidas (100%, unset);
         display: block;
-        width: 100%;
         margin: 0;
-        height: unset;
         .nosotros-main {
             display: flex;
             width: 100%;
@@ -273,16 +246,11 @@
             }
         }
         .contenedor-h1-nosotros{
-            padding: 15px;
             width: 100%;
         .nosotros-conocenos {
-            color: map-get($colores, detalles-naranja);
             margin: 0;
             font-size: 3em;
-            .conocenos-span {
-                display: none;
             }
-        }
         }
         .section-fotos {
             @include medidas (100%, unset);
@@ -290,23 +258,19 @@
             flex-direction: column;
             margin: 1 auto;
             gap: 20px;
-            width: 100%;
 
             .img-nosotros {
                 width: 100%;  
             }
         }
         .section-videos {
+            @include flex-center(flex, center, center);
+            @include medidas (100%, unset);
             background: none;
-            background-color: map-get($colores , primario);;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            width: 100%;
-            height: unset;
+            background-color: map-get($colores , primario);
+            flex-flow: column wrap;
             .video-nosotros {
-                height: unset;
-                width: 80%;
+                @include medidas (80%, unset);
                 margin: 1rem 0;
                 border: none;
             }
@@ -315,15 +279,13 @@
     
     
     .body-promos {
+        @include medidas (100%, unset);
         display: block;
-        width: 100%;
         margin: 0;
-        height: unset;
         background-image: none;
         background-color: map-get($colores , primario);
 
         .contenedor-h1-promos {
-            padding: 20px;
             @include medidas (100%, unset);
             .promo-h1 {
             font-size: 3em;
@@ -343,8 +305,8 @@
         }
         .promo-section-bottom {
             @include medidas (100%, unset);
-            padding-top: 4px;
             @include flex-center (flex, center, center);
+            padding-top: 4px;
             flex-direction: column;
             background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             .promo-img {
@@ -354,9 +316,9 @@
         }
 
         .contenedor-h2-mediospago{
+                padding: 20px;
                 @include medidas (100%, auto);
             .medio-pago {
-                padding: 20px;
                 font-size: 3em;
             }
         }
@@ -369,44 +331,43 @@
         .caja-efectivo,
         .tarjetas,
         .mercado-pago{
-            background-color: map-get($colores, primario);
             @include flex-center(flex, center, center);
             @include medidas (85%, 250px);
+            background-color: map-get($colores, primario);
             margin: 1rem auto;
             border: 1px solid map-get($colores, secundario );
             @include shadow (5px, 4px);
-        }
+            }
         }
         
     }
     
 /*contacto breakpoint a 360-380px, ver de solucionar*/
     .body-contacto {
+        @include medidas(100%, unset);
         display: block;
-        width: 100%;
         margin: 0;
-        height: unset;
         
         .contenedor-h1-contacto {
             width: 100%;
-            padding: 15px;
+            background-color: map-get($colores ,secundario );
             .contacto-h1{
                 font-size: 3em;
-                color:map-get($colores, detalles-naranja);
                 .contacto-h1 span{
                     display: none;
                 }
             }
         }
         .contenedor-banner{ 
-            width: 100%;
-            height: unset;
-        }
+            @include medidas(100%, unset);
+                .banner-contacto {
+                    @include medidas (100%, 150px);
+                }
+            }
         .main-contacto{
             @include flex-center(flex, center,center);
             width: 100%;
-            flex-direction: column;
-            flex-wrap: wrap;
+            flex-flow: column wrap;
             background: none;
             background-color: map-get($colores , primario);;
             

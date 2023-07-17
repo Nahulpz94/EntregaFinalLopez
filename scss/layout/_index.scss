@@ -34,13 +34,11 @@
             @include flex-center(flex, space-around, center);
             flex-direction: column;
             @include medidas (100%, 370px);
-            font-size: 32px;
             margin: 50px auto 0;
             padding: 0px;
-            font-family: 'Roboto', sans-serif;
             h3 {
+                @include tipografia(30px, 1.5, 'Roboto, sans-serif', bolder);
                 position: relative;
-                font-size: 30px;
                 text-align: center;
                 letter-spacing: 8px;
                 animation-name: bounceInLeft;
@@ -58,14 +56,12 @@
             font-family: 'Roboto', sans-serif;
         }
         .volvimos {/* h1 main*/
+            @include tipografia(90px, 1.5, 'Roboto', bold);
             @include flex-center(flex, center, center);
             letter-spacing: 15px;
-            font-weight: bold;
             @include medidas (100%, 100px);
             color: map-get($colores , terciario);
-            font-size: 90px;
             margin-top: 10px;
-            font-family: 'Roboto', sans-serif;
             animation-name: bounceInRight;
             animation-duration: 2s;
             span {
@@ -74,8 +70,7 @@
         }
         .contenedor-botones-index {/* botones main*/
             @include flex-center(flex, center, center);
-            height: 40px;
-            width: 100%;
+            @include medidas (100%, 40px);
             animation-name: zoomInUp;
             animation-duration: 2s;
             a { 
@@ -104,11 +99,10 @@
         }
     
     .index-section-bottom {/* seccion novedades */
-        display: flex;
+        @include flex-center(flex, center, center);
         flex-direction: column;
-        background-color:map-get($colores , primario);
-        font-size: 40px;
         @include medidas (90%, unset);
+        background-color:map-get($colores , primario);
         margin: 0 auto;
         padding-bottom: 20px;
         
@@ -117,17 +111,13 @@
             @include flex-center(flex, center, center);
             color: map-get($colores , terciario);
             margin-top: 10px;
+            font-size: 40px;
             margin-bottom: 30px;
             transition: 0.9s ease-in-out;
-    
         }
         .novedad {
-            font-size: larger;
-            letter-spacing: 2px;
             @include medidas (100%, 50px);
-            animation-name: Beat;
-            animation-duration: 4s;
-            animation-iteration-count: infinite;
+            letter-spacing: 2px;
         }
         
         .contenedor-videos-index {
@@ -135,10 +125,10 @@
             @include flex-center (flex, space-around,center);
     
             .pizzaparty {/*foto pizza party */
-                display: flex;
                 @include medidas (500px, 600px);
+                @include shadow (5px, 10px);
                 border: #000000 1px solid;
-                box-shadow: 1px 1px 20px map-get($colores, secundario );
+                display: flex;
                 transition: 0.9s ease-in-out;
                 &:hover {
                     transform: scale(1.05);
