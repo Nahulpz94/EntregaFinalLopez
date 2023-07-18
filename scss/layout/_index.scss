@@ -1,17 +1,10 @@
 /*fondo index*/
 
 .body-index {
-    width: 100%;
+    width: $full-width;
     background-image: url(../imgs/Main/fondo-index.webp);
     background-repeat: no-repeat;
     background-size:cover;
-    display: grid;
-    grid-template-rows: auto 1fr auto;  
-    grid-template-areas:
-    "header"
-    "main"
-    "section"
-    "footer";
     min-height: 100vh;
     .main-index {/*seccion principal*/
         background-image: url(../imgs/Main/fondo-volvimos.webp);
@@ -31,7 +24,7 @@
     
         .contenedor-volvimos{
             position: relative;
-            @include flex-center(flex, space-around, center);
+            @include flex(flex, space-around, center);
             flex-direction: column;
             @include medidas (100%, 370px);
             margin: 50px auto 0;
@@ -57,9 +50,9 @@
         }
         .volvimos {/* h1 main*/
             @include tipografia(90px, 'Roboto', bold);
-            @include flex-center(flex, center, center);
-            letter-spacing: 15px;
+            @include flex(flex, center, center);
             @include medidas (100%, 100px);
+            letter-spacing: 15px;
             color: map-get($colores , terciario);
             margin-top: 10px;
             animation-name: bounceInRight;
@@ -69,12 +62,12 @@
                 }
         }
         .contenedor-botones-index {/* botones main*/
-            @include flex-center(flex, center, center);
+            @include flex(flex, center, center);
             @include medidas (100%, 40px);
             animation-name: zoomInUp;
             animation-duration: 2s;
             a { 
-                @include flex-center(flex, center, center);
+                @include flex(flex, center, center);
                 color: map-get($colores , terciario);
                 font-size: 24px;
                 background-color: map-get($colores, detalles-naranja);
@@ -99,7 +92,7 @@
         }
     
     .index-section-bottom {/* seccion novedades */
-        @include flex-center(flex, center, center);
+        @include flex(flex, center, center);
         flex-direction: column;
         @include medidas (90%, unset);
         background-color:map-get($colores , primario);
@@ -108,7 +101,7 @@
         
         /*novedades h3*/
         h3 {
-            @include flex-center(flex, center, center);
+            @include flex(flex, center, center);
             color: map-get($colores , terciario);
             margin-top: 10px;
             font-size: 40px;
@@ -122,7 +115,7 @@
         
         .contenedor-videos-index {
             @include medidas (100%, 620px);
-            @include flex-center (flex, space-around,center);
+            @include flex(flex, space-around,center);
     
             .pizzaparty {/*foto pizza party */
                 @include medidas (500px, 600px);
@@ -135,12 +128,11 @@
                 }
             }
             .video-index {/* video novedades */
-                border: #000000 1px solid;
-                @include medidas (500px, 600px);
-                padding: 15px; 
-                top: 0px; 
-                transition: 0.9s ease-in-out;
                 @include shadow (2px, 5px);
+                @include medidas (500px, 600px);
+                border: #000000 1px solid;
+                padding: 15px; 
+                transition: 0.9s ease-in-out;
                 &:hover{
                     transform: scale(1.05);
                 }

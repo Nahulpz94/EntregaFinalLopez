@@ -17,13 +17,11 @@
         }
     }
     nav {
-        @include flex-center(flex, space-evenly, unset);
-        width: 100%;
-    
+        @include flex(flex, space-evenly, unset);
+        width: $full-width;
         .navbar-toggler-icon {
             color: map-get($colores , secundario);
         }
-    
         ul { 
             padding: 10px;
             display: inline-flex;
@@ -32,8 +30,7 @@
             li {
                 list-style-type: none;
                 a { 
-                    
-                    font-size: 20px;
+                    @include tipografia(22px, unset , unset);
                     letter-spacing: 2px;
                     color: map-get($colores , salmon-oscuro) ;
                     margin: 30px;
@@ -48,24 +45,19 @@
                         color: map-get($colores , terciario);
                         background-color: map-get($colores, detalles-naranja);
                         @include shadow (5px, 4px, secundario);
-                        border-radius: 5px;
                     }    
                 }
             }    
         }
     }
     #logo-redes {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex(flex, center, center);
+        @include medidas (250px, 100px);
         margin-top: 5px;
-        width: 250px;
-        height: 100px;
         .fa-instagram,
         .fa-facebook,
         .fa-whatsapp,
         .fa-twitter {/*iconos redes*/
-            
             background-color: map-get($colores , secundario);
             padding: 10px;
             margin: 5px;

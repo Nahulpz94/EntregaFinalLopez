@@ -26,10 +26,9 @@
         }
     }
     .nosotros-main { /*main nosotros*/
-        @include flex-center (flex, space-between, center);
+        @include flex(flex, space-between, center);
+        @include medidas (90%, auto);
         margin: 0 auto;
-        height: auto;
-        width: 90%;
         background-color:map-get($colores , terciario);
         padding: 10px;
         animation-name: slideInUp;
@@ -55,9 +54,8 @@
         }
     
     .section-fotos { /*seccion fotos*/
-        @include flex-center (flex, space-between, center);
+        @include flex(flex, space-between, center);
         @include medidas (90%, 550px);
-        width: 90%;
         margin: 0 auto;
         padding: 10px;
         background-color: map-get($colores , salmon-claro) ;
@@ -74,19 +72,14 @@
         background-image: url(../imgs/Nosotros/fondo-Videos.png);
         background-size: cover;
         background-repeat: no-repeat;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
+        @include flex(flex, space-around,center);
+        @include medidas (90%, 520px);
         margin: 0 auto;
         background-color: map-get($colores , primario);
-        width: 90%;
-        height: 520px;
         .video-nosotros { /*videos*/
-            height: 450px;  
-            width: 30%;   
-            border: 1px solid map-get($colores , secundario );
-            border-radius: 2px;
+            @include medidas (30%, 450px);
             @include shadow (2px, 5px);
+            border: 1px solid map-get($colores , secundario );
         }
     }
 }

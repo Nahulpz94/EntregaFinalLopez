@@ -1,5 +1,5 @@
 /*MIXINS*/
-@mixin flex-center($display, $horizontal, $vertical){
+@mixin flex($display, $horizontal, $vertical){
     display: $display;
     justify-content: $horizontal;
     align-items: $vertical;
@@ -22,7 +22,7 @@
 }
 
 @mixin boton($background-color, $text-color) {
-    @include flex-center(flex, center , center);
+    @include flex(flex, center , center);
         @include shadow (5px, 2px);
     padding: 5px 0;
     background-color: $background-color;

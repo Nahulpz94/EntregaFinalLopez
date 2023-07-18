@@ -1,15 +1,11 @@
 /*estilos del footer*/
 .footer {
-    display: flex;
+    @include flex(flex, space-between, center);
+    @include medidas (100%, auto);
     flex-direction: column;
-    width: 100%;
-    height: auto ;
     color: map-get($colores , detalles-violeta) ;
     background-color: map-get($colores , salmon-claro) ;
-    justify-content: space-between;
-    align-items: center;
-    margin-top:2px; 
-;
+
     a {/* enlaces */
         color: map-get($colores , detalles-violeta) ;
         text-decoration: none;
@@ -42,12 +38,9 @@
         }
     }
     .footer-info {/*info del footer*/
-        display: flex;
+        @include flex(flex, center, center);
         height: auto;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
         margin-top: 1%;
         letter-spacing: 8px;
         h3 {
@@ -57,8 +50,7 @@
             letter-spacing: 8px;
         }
         a {
-            color:map-get($colores, detalles-naranja) ;  
-
+            color:map-get($colores, detalles-naranja);  
         } 
         #footer-envelope {
             font-size: 20px;
@@ -75,24 +67,19 @@
         letter-spacing: 8px;
         h3 {
             font-size: 22px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex(flex, center, center);
             text-decoration: underline;
             margin: 0;
-        }        
+            }        
         p {
             margin: 0;
             font-size: 20px;
         }
     }
     .footer-hora {
+        @include flex(flex, center, center);
         margin-top: 1%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        flex-wrap: wrap;
+        flex-flow: column wrap;
         color: map-get($colores , detalles-violeta) ;
         height: auto;
         letter-spacing: 8px;
@@ -114,10 +101,7 @@
         &:hover {
             background-color: map-get($colores, detalles-naranja);
             border-radius: 100%; 
-            transform: scale(1.1);  
-            
-
-
+            transform: scale(1.1);              
         }
     }
 }

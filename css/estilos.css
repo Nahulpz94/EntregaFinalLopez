@@ -54,7 +54,9 @@ html {
   list-style-type: none;
 }
 .header nav ul li a {
-  font-size: 20px;
+  font-size: 22px;
+  font-family: unset;
+  font-weight: unset;
   letter-spacing: 2px;
   color: #F8B195;
   margin: 30px;
@@ -71,15 +73,14 @@ html {
   background-color: #FF5733;
   border-radius: 5px;
   box-shadow: 4px 4px 8px #1C3334;
-  border-radius: 5px;
 }
 .header #logo-redes {
   display: flex;
-  align-items: center;
   justify-content: center;
-  margin-top: 5px;
+  align-items: center;
   width: 250px;
   height: 100px;
+  margin-top: 5px;
 }
 .header #logo-redes .fa-instagram,
 .header #logo-redes .fa-facebook,
@@ -107,9 +108,6 @@ html {
   background-image: url(../imgs/Main/fondo-index.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-areas: "header" "main" "section" "footer";
   min-height: 100vh;
 }
 .body-index .main-index { /*seccion principal*/
@@ -167,9 +165,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  letter-spacing: 15px;
   width: 100%;
   height: 100px;
+  letter-spacing: 15px;
   color: #F5F5F5;
   margin-top: 10px;
   animation-name: bounceInRight;
@@ -270,14 +268,13 @@ html {
   transform: scale(1.05);
 }
 .body-index .index-section-bottom .contenedor-videos-index .video-index { /* video novedades */
-  border: #000000 1px solid;
-  width: 500px;
-  height: 600px;
-  padding: 15px;
-  top: 0px;
-  transition: 0.9s ease-in-out;
   border-radius: 2px;
   box-shadow: 5px 5px 10px #1C3334;
+  width: 500px;
+  height: 600px;
+  border: #000000 1px solid;
+  padding: 15px;
+  transition: 0.9s ease-in-out;
 }
 .body-index .index-section-bottom .contenedor-videos-index .video-index:hover {
   transform: scale(1.05);
@@ -291,14 +288,13 @@ html {
 /*estilos del footer*/
 .footer {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: auto;
-  color: #783E75;
-  background-color: #FFD3B5;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2px;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  color: #783E75;
+  background-color: #FFD3B5;
 }
 .footer a { /* enlaces */
   color: #783E75;
@@ -333,11 +329,10 @@ html {
 }
 .footer .footer-info { /*info del footer*/
   display: flex;
-  height: auto;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  height: auto;
+  flex-flow: column wrap;
   margin-top: 1%;
   letter-spacing: 8px;
 }
@@ -376,12 +371,11 @@ html {
   font-size: 20px;
 }
 .footer .footer-hora {
-  margin-top: 1%;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
+  margin-top: 1%;
+  flex-flow: column wrap;
   color: #783E75;
   height: auto;
   letter-spacing: 8px;
@@ -481,7 +475,6 @@ html {
   border: 1px solid rgb(56, 54, 54);
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  border-radius: 5px;
   backface-visibility: hidden;
   display: flex;
   justify-content: space-around;
@@ -509,26 +502,24 @@ html {
   text-align: center;
 }
 #body-menu .card-container-top .card-container .card-back {
-  border: 1px solid rgb(56, 54, 54);
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  position: absolute;
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   background-color: #1C3334;
   color: #F5F5F5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: 1px solid rgb(56, 54, 54);
   font-size: 20px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border-radius: 5px;
+  flex-flow: column wrap;
   line-height: 30px;
   text-align: center;
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
 #body-menu .card-container-bottom {
   width: 100%;
@@ -559,12 +550,11 @@ html {
   border: 1px solid rgb(56, 54, 54);
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  border-radius: 5px;
   backface-visibility: hidden;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
+  flex-flow: column wrap;
   background-color: #FF5733;
   padding: 10px 15px 0 15px;
 }
@@ -587,26 +577,24 @@ html {
   text-align: center;
 }
 #body-menu .card-container-bottom .card-container .card-back {
-  border: 1px solid rgb(56, 54, 54);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  position: absolute;
   width: 100%;
   height: 100%;
+  border: 1px solid rgb(56, 54, 54);
+  position: absolute;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   background-color: #1C3334;
   color: #F5F5F5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   font-size: 20px;
-  flex-wrap: wrap;
-  flex-direction: column;
-  border-radius: 5px;
+  flex-flow: column wrap;
   line-height: 30px;
   text-align: center;
-  padding: 15px 15px 15px 15px;
+  padding: 15px;
 }
 #body-menu .menu-section-bottom { /*seccion baja*/
   width: 90%;
@@ -653,9 +641,9 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto;
-  height: auto;
   width: 90%;
+  height: auto;
+  margin: 0 auto;
   background-color: #F5F5F5;
   padding: 10px;
   animation-name: slideInUp;
@@ -688,7 +676,6 @@ html {
   align-items: center;
   width: 90%;
   height: 550px;
-  width: 90%;
   margin: 0 auto;
   padding: 10px;
   background-color: #FFD3B5;
@@ -707,20 +694,19 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  margin: 0 auto;
-  background-color: #AE2A3F;
+  align-items: center;
   width: 90%;
   height: 520px;
+  margin: 0 auto;
+  background-color: #AE2A3F;
 }
 .body-nosotros .section-videos .video-nosotros { /*videos*/
-  height: 450px;
   width: 30%;
-  border: 1px solid #1C3334;
-  border-radius: 2px;
+  height: 450px;
   border-radius: 2px;
   box-shadow: 5px 5px 10px #1C3334;
+  border: 1px solid #1C3334;
 }
 
 /*estilo promociones*/
@@ -818,24 +804,25 @@ html {
   color: #FF5733;
 }
 .body-promos .section-mediopagos { /*medios de pago*/
-  height: 320px;
   display: flex;
-  background-image: url(../imgs/Promos/fondo-pagos.png);
-  width: 90%;
-  margin: 0 auto;
   justify-content: space-around;
   align-items: center;
+  width: 90%;
+  height: 320px;
+  background-image: url(../imgs/Promos/fondo-pagos.png);
+  margin: 0 auto;
 }
 .body-promos .section-mediopagos .caja-efectivo { /*efectivo*/
-  border: 1px solid #1C3334;
   width: 300px;
   height: 240px;
   display: flex;
-  box-shadow: 0 0 10px black;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
+  transition: 0.4s ease;
+  flex-direction: column;
+  border: 1px solid #1C3334;
 }
 .body-promos .section-mediopagos .caja-efectivo .h3-medios-de-pago { /*texto efectivo*/
   border-radius: 5px;
@@ -854,18 +841,18 @@ html {
 }
 .body-promos .section-mediopagos .caja-efectivo:hover { /*hover*/
   transform: scale(1.09);
-  transition: 0.2s ease;
 }
 .body-promos .section-mediopagos .tarjetas { /*tarjetas*/
-  border: 1px solid #1C3334;
   width: 350px;
   height: 240px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px black;
-  border-radius: 10px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
+  transition: 0.4s ease;
+  border: 1px solid #1C3334;
+  flex-direction: column;
 }
 .body-promos .section-mediopagos .tarjetas .h3-medios-de-pago { /*texto*/
   display: flex;
@@ -884,18 +871,18 @@ html {
 }
 .body-promos .section-mediopagos .tarjetas:hover {
   transform: scale(1.09);
-  transition: 0.2s ease;
 }
 .body-promos .section-mediopagos .mercado-pago { /*mercado pago*/
-  border: 1px solid black;
   width: 300px;
   height: 240px;
   display: flex;
-  box-shadow: 0 0 10px black;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
+  border: 1px solid black;
+  transition: 0.4s ease;
+  flex-direction: column;
 }
 .body-promos .section-mediopagos .mercado-pago .h3-medios-de-pago { /*texto mercado*/
   display: flex;
@@ -914,7 +901,6 @@ html {
 }
 .body-promos .section-mediopagos .mercado-pago:hover {
   transform: scale(1.09);
-  transition: 0.2s ease;
 }
 
 /*estilo contacto*/
@@ -986,18 +972,19 @@ html {
   border: 1px solid #1C3334;
 }
 .body-contacto .main-contacto .form-contacto .campo { /*campo*/
-  font-family: "Poppins", sans-serif;
+  font-size: unset;
+  font-family: "Poppins";
   font-weight: bolder;
   text-align: center;
-  color: #F5F5F5;
-  background-color: #1C3334;
   width: 80%;
   height: 100%;
+  color: #F5F5F5;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
+  background-color: #1C3334;
   padding: 10px;
   border: 1px solid #1C3334;
   margin: 10px 0;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #1C3334;
   transition: 0.4s ease;
 }
 .body-contacto .main-contacto .form-contacto .campo::placeholder {
@@ -1012,7 +999,8 @@ html {
 }
 .body-contacto .main-contacto .form-contacto .campo:focus {
   outline: none;
-  box-shadow: 0 0 10px 0 black;
+  border-radius: 5px;
+  box-shadow: 4px 4px 8px #1C3334;
   transition: 1s ease;
   color: #F5F5F5;
   text-align: center;
@@ -1028,17 +1016,16 @@ html {
   font-size: 16px;
   font-family: unset;
   font-weight: bolder;
-  line-height: 20px;
-  text-align: center;
   color: #F5F5F5;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
   width: 80%;
   height: 180px;
+  line-height: 20px;
+  text-align: center;
   resize: none;
   border: 1px solid #1C3334;
   background-color: #1C3334;
-  border-radius: 5px;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #1C3334;
   transition: 0.4s ease;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje:hover {
@@ -1056,8 +1043,8 @@ html {
   transition: 0.1s ease;
   font-size: 16px;
   letter-spacing: 1px;
-  color: transparent;
   text-align: center;
+  color: transparent;
 }
 .body-contacto .main-contacto .form-contacto .caja-mensaje::placeholder {
   font-size: 16px;

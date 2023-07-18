@@ -14,7 +14,7 @@
         padding: 40px;
         margin: 0 auto;
         .promo-h1 { /*promociones*/
-            @include flex-center(flex,center,center);
+            @include flex(flex,center,center);
             font-size: 60px;
             animation-name: bounceIn;
             animation-duration: 3s;
@@ -26,7 +26,7 @@
         }
 }
     .promo-section-top {/*seccion superior*/
-        @include flex-center (flex, space-evenly, center);
+        @include flex(flex, space-evenly, center);
         @include medidas (90%, 750px);
         padding: 0 10px;
         width: 90%;
@@ -48,7 +48,7 @@
     
     .promo-section-bottom { /*seccion*/
         @include medidas (90%, 750px);
-        @include flex-center (flex, space-evenly, center);
+        @include flex(flex, space-evenly, center);
         padding: 0 1rem;
         animation-name: bounceInUp;
         animation-duration: 3s;
@@ -82,23 +82,17 @@
     }
 }
     .section-mediopagos{ /*medios de pago*/
-        height: 320px;
-        display: flex;
+        @include flex(flex, space-around,center);
+        @include medidas (90%, 320px);
         background-image:url(../imgs/Promos/fondo-pagos.png);
-        width: 90%;
         margin: 0 auto;
-        justify-content: space-around;
-        align-items: center;
         .caja-efectivo { /*efectivo*/
-            border: 1px solid map-get($colores , secundario);
-            width: 300px;
-            height: 240px;
-            display: flex;
-            box-shadow: 0 0 10px black;
+            @include medidas (300px, 240px);
+            @include flex(flex, center, center);
+            @include shadow (5px, 5px);
+            transition: 0.4s ease;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            border-radius: 10px;
+            border: 1px solid map-get($colores , secundario);
             .h3-medios-de-pago { /*texto efectivo*/
                 @include shadow (5px, 5px);
                 display: flex;
@@ -109,25 +103,21 @@
                 padding: 5px 5px;
             }
             .efectivo { /*imagen efectivo*/
-                width: 150px;
-                height: 150px;
+                @include medidas (150px, 150px);
                 margin: 0 25% 0 25%;
             } 
             &:hover{ /*hover*/
                 transform: scale(1.09);
-                transition: 0.2s ease;
+
             }
         }
         .tarjetas { /*tarjetas*/
+            @include medidas(350px, 240px);
+            @include flex(flex, center, center);
+            @include shadow (5px, 5px);
+            transition: 0.4s ease;
             border: 1px solid map-get($colores , secundario);
-            width: 350px;
-            height: 240px;
-            display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 0 10px black;
-            border-radius: 10px;
             .h3-medios-de-pago { /*texto*/
                 display: flex;
                 font-size: 24px;
@@ -139,25 +129,20 @@
             }
             .tarjeta { /*imagen tarjeta*/
                 display: flex;
-                width: 320px;
-                height: 150px;
+                @include medidas (320px, 150px);
                 
             }
             &:hover{
                 transform: scale(1.09);
-                transition: 0.2s ease;
             }
         }
         .mercado-pago { /*mercado pago*/
+            @include medidas (300px, 240px);
+            @include flex(flex, center, center);
+            @include shadow (5px, 5px);
             border: 1px solid black;
-            width: 300px;
-            height: 240px;
-            display: flex;
-            box-shadow: 0 0 10px black;
+            transition: 0.4s ease;
             flex-direction: column;
-            align-items: center; 
-            justify-content: center;
-            border-radius: 10px; 
             .h3-medios-de-pago { /*texto mercado*/
                 display: flex;
                 font-size: 24px;
@@ -169,12 +154,10 @@
             } 
             .mercado-pago-img { /*imagen mercado*/
                 display: flex;
-                width: 150px;
-                height: 150px;
+                @include medidas (150px, 150px);
             }
             &:hover{
                 transform: scale(1.09);
-                transition: 0.2s ease;
             }
         }
     }
