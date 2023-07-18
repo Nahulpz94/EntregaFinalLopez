@@ -63,6 +63,8 @@
                         @include flex-center (flex, center, center);
                         @include medidas (90%, unset);
                         font-size: 3rem;
+                        animation-name: none;
+                        margin-top: 0;
                         padding: 0;
                         margin-bottom: 20px;
                         letter-spacing: 5px;
@@ -75,11 +77,17 @@
                         @include medidas (100%, unset);
                         font-size: 24px;
                         letter-spacing: 0;
+                        animation-name: none;
                         color: map-get($colores , salmon-oscuro);
                     }
                 }
                 .contenedor-botones-index{
                     height: unset;
+
+                    .boton {
+                        height: 35px;
+                        padding: 10px 0;
+                    }
                 }
             }
         }
