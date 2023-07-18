@@ -839,12 +839,13 @@ html {
   border-radius: 10px;
 }
 .body-promos .section-mediopagos .caja-efectivo .h3-medios-de-pago { /*texto efectivo*/
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   display: flex;
   font-size: 24px;
   align-self: center;
   color: #F5F5F5;
   background-color: #FF5733;
-  border-radius: 5px;
   padding: 5px 5px;
 }
 .body-promos .section-mediopagos .caja-efectivo .efectivo { /*imagen efectivo*/
@@ -874,6 +875,7 @@ html {
   color: #F5F5F5;
   background-color: #FF5733;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   padding: 5px 5px;
 }
 .body-promos .section-mediopagos .tarjetas .tarjeta { /*imagen tarjeta*/
@@ -903,6 +905,7 @@ html {
   color: #F5F5F5;
   background-color: #FF5733;
   border-radius: 5px;
+  box-shadow: 5px 5px 10px #1C3334;
   padding: 5px 5px;
 }
 .body-promos .section-mediopagos .mercado-pago .mercado-pago-img { /*imagen mercado*/
@@ -1315,13 +1318,16 @@ html {
   }
   #body-menu .contenedor-h1-menu {
     padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
   }
   #body-menu .contenedor-h1-menu .nuestro-menu {
     padding: 20px;
-    font-size: 2em;
-    width: 100%;
+    font-size: 3em;
+    width: 90%;
     height: auto;
   }
   #body-menu #menu-section-top {
@@ -1388,11 +1394,15 @@ html {
     margin: 2rem 1rem;
   }
   .body-nosotros .contenedor-h1-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
   }
   .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos {
     margin: 0;
-    font-size: 2em;
+    width: 90%;
+    font-size: 3em;
   }
   .body-nosotros .section-fotos {
     width: 100%;
@@ -1430,11 +1440,15 @@ html {
     background-color: #AE2A3F;
   }
   .body-promos .contenedor-h1-promos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: unset;
   }
   .body-promos .contenedor-h1-promos .promo-h1 {
-    font-size: 2em;
+    font-size: 3em;
+    width: 90%;
   }
   .body-promos .promo-section-top {
     width: 100%;
@@ -1468,12 +1482,18 @@ html {
     height: unset;
   }
   .body-promos .contenedor-h2-mediospago {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     width: 100%;
     height: auto;
   }
   .body-promos .contenedor-h2-mediospago .medio-pago {
+    text-align: center;
+    width: 80%;
     font-size: 3em;
+    margin: 0;
   }
   .body-promos .section-mediopagos {
     width: 100%;
@@ -1505,11 +1525,15 @@ html {
     margin: 0;
   }
   .body-contacto .contenedor-h1-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     background-color: #1C3334;
   }
   .body-contacto .contenedor-h1-contacto .contacto-h1 {
-    font-size: 2em;
+    width: 90%;
+    font-size: 3em;
   }
   .body-contacto .contenedor-h1-contacto .contacto-h1 .contacto-h1 span {
     display: none;

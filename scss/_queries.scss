@@ -184,11 +184,12 @@
     #body-menu {
     .contenedor-h1-menu{
         padding: 20px;
+        @include flex-center(flex, center, center);
         @include medidas (100%, auto);
         .nuestro-menu {
             padding: 20px;
-            font-size: 2em;
-            @include medidas (100%, auto)
+            font-size: 3em;
+            @include medidas (90%, auto)
         }
     }
     #menu-section-top {
@@ -246,10 +247,13 @@
             }
         }
         .contenedor-h1-nosotros{
+            @include flex-center(flex, center, center);
+
             width: 100%;
         .nosotros-conocenos {
             margin: 0;
-            font-size: 2em;
+            width: 90%;
+            font-size: 3em;
             }
         }
         .section-fotos {
@@ -286,9 +290,11 @@
         background-color: map-get($colores , primario);
 
         .contenedor-h1-promos {
+            @include flex-center(flex, center,center);
             @include medidas (100%, unset);
             .promo-h1 {
-            font-size: 2em;
+            font-size: 3em;
+            width: 90%;
             }
         }
         .promo-section-top {
@@ -316,10 +322,14 @@
         }
 
         .contenedor-h2-mediospago{
+            @include flex-center(flex, center,center);
                 padding: 20px;
                 @include medidas (100%, auto);
             .medio-pago {
+                text-align: center;
+                width: 80%;
                 font-size: 3em;
+                margin: 0;
             }
         }
         .section-mediopagos{
@@ -349,10 +359,12 @@
         margin: 0;
         
         .contenedor-h1-contacto {
+            @include flex-center(flex, center, center);
             width: 100%;
             background-color: map-get($colores ,secundario );
             .contacto-h1{
-                font-size: 2em;
+                width: 90%;
+                font-size: 3em;
                 .contacto-h1 span{
                     display: none;
                 }
