@@ -7,19 +7,16 @@
 
     .contenedor-h1-promos{
         @include medidas (90%, unset);
-        color:map-get($colores , terciario);
-        background-color:map-get($colores , secundario);
-        animation-name: fadeInUp;
-        animation-duration: 1s;
         padding: 40px;
         margin: 0 auto;
+        color:map-get($colores , terciario);
+        background-color:map-get($colores , secundario);
+        @include animate(fadeInUp, 1s, 1);
         .promo-h1 { /*promociones*/
             @include flex(flex,center,center);
-            font-size: 60px;
-            animation-name: bounceIn;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
             margin-bottom: 0;
+            font-size: 60px;
+            @include animate(bounceIn, 3s, infinite);
             span {
                 color:map-get($colores, detalles-naranja)
             }
@@ -27,19 +24,17 @@
 }
     .promo-section-top {/*seccion superior*/
         @include flex(flex, space-evenly, center);
-        @include medidas (90%, 750px);
         padding: 0 10px;
-        width: 90%;
         margin: 0 auto;
+        @include medidas (90%, 750px);
         background-color: map-get($colores, detalles-naranja);
-        animation-name: slideInUp;
-        animation-duration: 2s;
+        @include animate(slideInUp, 2s, 1);
         animation-timing-function: ease-in-out;
         .promo-img {
             @include medidas (100%,700px);
             margin: 10px;
-            transition: 1.03s ease;
             @include shadow (5px, 5px);
+            transition: 1.03s ease;
             &:hover {
                 transform: scale(1.02);
             }
@@ -50,9 +45,8 @@
         @include medidas (90%, 750px);
         @include flex(flex, space-evenly, center);
         padding: 0 1rem;
-        animation-name: bounceInUp;
-        animation-duration: 3s;
         margin: 0 auto;
+        @include animate(bounceInUp, 3s, 1);
         background-color: map-get($colores, detalles-naranja);
         .promo-img {
             @include medidas (100%,700px);
@@ -65,17 +59,15 @@
         }
     }
     .contenedor-h2-mediospago{/*estilo medios de pago*/
-        background-color: map-get($colores , secundario);
-        margin: 0 auto;
         width: 90%;
+        margin: 0 auto;
         padding: 40px;
+        background-color: map-get($colores , secundario);
     .medio-pago { 
         color: map-get($colores , terciario);
         font-size: 50px;
         text-align: center;
-        animation-name: bounceIn;
-        animation-duration: 3s;
-        animation-iteration-count: infinite;
+        @include animate(bounceIn, 3s, infinite);
         span {
             color: map-get($colores, detalles-naranja);
         }
@@ -84,23 +76,23 @@
     .section-mediopagos{ /*medios de pago*/
         @include flex(flex, space-around,center);
         @include medidas (90%, 320px);
-        background-image:url(../imgs/Promos/fondo-pagos.png);
         margin: 0 auto;
+        background-image:url(../imgs/Promos/fondo-pagos.png);
         .caja-efectivo { /*efectivo*/
             @include medidas (300px, 240px);
             @include flex(flex, center, center);
-            @include shadow (5px, 5px);
-            transition: 0.4s ease;
             flex-direction: column;
+            @include shadow (5px, 5px);
             border: 1px solid map-get($colores , secundario);
+            transition: 0.4s ease;
             .h3-medios-de-pago { /*texto efectivo*/
-                @include shadow (5px, 5px);
                 display: flex;
+                padding: 5px 5px;
                 font-size: 24px;
                 align-self: center;
                 color: map-get($colores , terciario);
                 background-color:map-get($colores, detalles-naranja);
-                padding: 5px 5px;
+                @include shadow (5px, 5px);
             }
             .efectivo { /*imagen efectivo*/
                 @include medidas (150px, 150px);
@@ -114,18 +106,18 @@
         .tarjetas { /*tarjetas*/
             @include medidas(350px, 240px);
             @include flex(flex, center, center);
+            flex-direction: column;
+            border: 1px solid map-get($colores , secundario);
             @include shadow (5px, 5px);
             transition: 0.4s ease;
-            border: 1px solid map-get($colores , secundario);
-            flex-direction: column;
             .h3-medios-de-pago { /*texto*/
                 display: flex;
+                padding: 5px 5px;
                 font-size: 24px;
                 align-self: center;
                 color: map-get($colores , terciario);
                 background-color:map-get($colores, detalles-naranja);
                 @include shadow (5px, 5px);
-                padding: 5px 5px;
             }
             .tarjeta { /*imagen tarjeta*/
                 display: flex;
@@ -139,18 +131,18 @@
         .mercado-pago { /*mercado pago*/
             @include medidas (300px, 240px);
             @include flex(flex, center, center);
+            flex-direction: column;
             @include shadow (5px, 5px);
             border: 1px solid black;
             transition: 0.4s ease;
-            flex-direction: column;
             .h3-medios-de-pago { /*texto mercado*/
                 display: flex;
+                padding: 5px 5px;
                 font-size: 24px;
                 align-self: center;
                 color: map-get($colores , terciario);
                 background-color:map-get($colores, detalles-naranja);
                 @include shadow (5px, 5px);
-                padding: 5px 5px;
             } 
             .mercado-pago-img { /*imagen mercado*/
                 display: flex;

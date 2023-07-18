@@ -2,12 +2,12 @@
     position:sticky;
     top: 0;
     z-index: 100;
+    margin: 0 auto;
+    @include medidas (100%, 100px);
     display: flex;
-    @include shadow (0, 4px);
     background-color: map-get($colores , primario);
     border-bottom: 1px solid map-get($colores , secundario );
-    @include medidas (100%, 100px);
-    margin: 0 auto;
+    @include shadow (0, 4px);
     #logo { /*logo*/
         position: relative;
         right: 120px;
@@ -19,24 +19,24 @@
     nav {
         @include flex(flex, space-evenly, unset);
         width: $full-width;
-        .navbar-toggler-icon {
-            color: map-get($colores , secundario);
-        }
+            .navbar-toggler-icon {
+                color: map-get($colores , secundario);
+                }
         ul { 
             padding: 10px;
+            height: 110px;
             display: inline-flex;
             align-items: center;
-            height: 110px;
             li {
                 list-style-type: none;
                 a { 
-                    @include tipografia(22px, unset , unset);
-                    letter-spacing: 2px;
-                    color: map-get($colores , salmon-oscuro) ;
                     margin: 30px;
                     padding: 0 5px;
-                    transition: 0.4s ease;
+                    @include font-roboto(700, false, 22px, 1.3);
+                    letter-spacing: 2px;
                     text-decoration: none;
+                    color: map-get($colores , salmon-oscuro) ;
+                    transition: 0.4s ease;
                     &:hover{
                         color: map-get($colores, terciario);
                         transform: scale(1.2);
@@ -58,18 +58,20 @@
         .fa-facebook,
         .fa-whatsapp,
         .fa-twitter {/*iconos redes*/
-            background-color: map-get($colores , secundario);
             padding: 10px;
             margin: 5px;
-            border-radius: 50px;
+            font-size: 20px;
+            background-color: map-get($colores , secundario);
+            @include shadow (50px, 3px);
+            transition: 0.5s ease;
         }
         a {
             color: map-get($colores , salmon-claro) ;
         }
         i:hover { /*iconos hover*/
-            transition: 0.3s ease;
             background-color: map-get($colores , terciario);
-            color: #9A3061;
+            @include shadow (5px, 5px);
+            color: map-get($colores, primario );
             opacity: 0.7;
             transform: scale(1.09);
         } 

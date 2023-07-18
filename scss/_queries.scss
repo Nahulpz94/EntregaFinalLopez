@@ -47,13 +47,11 @@
 
     .body-index{
         display: block;
-        width: 100%;
-        height: unset;
+        @include medidas (100%, unset);
         padding: 0;
         margin: 0;
         .main-index {
-            width: 100%;
-            height: unset;
+            @include medidas (100%, unset);
             .main-overlay {
                 height: unset;
                 padding: 0 2em;  
@@ -62,13 +60,14 @@
                     .volvimos {
                         @include flex(flex, center, center);
                         @include medidas (90%, unset);
-                        font-size: 3rem;
-                        animation-name: none;
                         margin-top: 0;
                         padding: 0;
                         margin-bottom: 20px;
+                        line-height: 1.2;
+                        font-size: 3rem;
                         letter-spacing: 5px;
                         color:map-get($colores , salmon-claro) ; 
+                        animation-name: none;
                         .volvimos-span{
                             font-size: 3rem
                         }
@@ -98,18 +97,16 @@
             margin: 0 auto;
             @include medidas (100%, unset);
             .novedad {
-                display: flex;
-                align-items: center;
+                @include flex(flex, center, center);
                 margin: 0;
                 padding: 1em;
                 animation-name: none;
             }
             .contenedor-videos-index {
-                @include flex(flex, space-around, center);
                 @include medidas (90%, auto);
                 margin: 0 auto;
-                flex-direction: column;
-                flex-wrap: wrap;
+                @include flex(flex, space-around, center);
+                flex-flow: column wrap;
                 .pizzaparty {
                     @include medidas (100%, unset);
                     margin-bottom: 2rem;
@@ -133,8 +130,8 @@
         flex-direction: column;
         .footer-info {
             @include flex(flex, center, center);
-            margin-top: 15px;
             flex-wrap: wrap;
+            margin-top: 15px;
             font-size: 18px;
             #footer-phone {
                 font-size: 18px;
@@ -150,8 +147,7 @@
         #footer-redes {
             width: 100%;
             margin: 0 auto;
-            display: flex;
-            justify-content: center;
+            @include flex(flex, center, center);
         }
         .footer-hora {
             width: 100%;
@@ -177,27 +173,26 @@
         }
         .scroll-up-container{
             position: fixed;
+            @include medidas(30px, 30px);
             bottom: 6px;
             right: 6px;
-            width: 30px;
-            height: 30px;
             border-radius: 50%;
             img{
-                width: 30px;
-                height: 30px;
+                @include medidas(30px, 30px);
             }
         }
     }
 
     #body-menu {
+        height: 100vh;
     .contenedor-h1-menu{
         padding: 20px;
         @include flex(flex, center, center);
         @include medidas (100%, auto);
         .nuestro-menu {
+            @include medidas (90%, auto);
             padding: 20px;
             font-size: 3em;
-            @include medidas (90%, auto)
         }
     }
     #menu-section-top {
@@ -256,7 +251,6 @@
         }
         .contenedor-h1-nosotros{
             @include flex(flex, center, center);
-
             width: 100%;
         .nosotros-conocenos {
             margin: 0;
@@ -289,7 +283,6 @@
         }
     }
     
-    
     .body-promos {
         @include medidas (100%, 100vh);
         display: block;
@@ -307,9 +300,9 @@
         .promo-section-top {
             @include medidas (100%, unset);
             padding-top: 30px;
+            margin: 0 auto;
             @include flex(flex, space-around, space-around);
             flex-direction: column;
-            margin: 0 auto;
             background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             .promo-img {
                 margin: 0 auto 1rem;
@@ -318,8 +311,8 @@
         }
         .promo-section-bottom {
             @include medidas (100%, unset);
-            @include flex(flex, center, center);
             padding-top: 4px;
+            @include flex(flex, center, center);
             flex-direction: column;
             background-image: linear-gradient(to right, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #ec4939, #ec4939, #ec4939, #dd403c, #ce383e, #be303f, #ae2a3f);
             .promo-img {
@@ -342,16 +335,16 @@
         .section-mediopagos{
             @include medidas (100%, unset);
             padding-bottom: 10px;
-            background: none;
             display: flex;
             flex-wrap: wrap;
+            background: none;
         .caja-efectivo,
         .tarjetas,
         .mercado-pago{
             @include flex(flex, center, center);
+            margin: 1rem auto;
             @include medidas (85%, 250px);
             background-color: map-get($colores, primario);
-            margin: 1rem auto;
             border: 1px solid map-get($colores, secundario );
             @include shadow (5px, 4px);
             }

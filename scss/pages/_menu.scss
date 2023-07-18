@@ -6,21 +6,18 @@
     background-repeat: no-repeat;
     background-size: cover; 
     .contenedor-h1-menu{
-        margin: 0 auto;
         width: 90%;
-        background-color: map-get($colores , secundario);
+        margin: 0 auto;
         padding: 40px;
-        animation-name: fadeInUp;
-        animation-duration: 1s;
+        background-color: map-get($colores , secundario);
+        @include animate(fadeInUp, 1s, 1);
         .nuestro-menu {/*h1 menu*/
             width: 90%;
-            color: map-get($colores, detalles-naranja);
-            text-align: center;
-            font-size: 60px;
-            animation-name: bounceIn;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
             margin: 0;
+            @include font-roboto(700, false, 60px, 1);
+            text-align: center;
+            color: map-get($colores, detalles-naranja);
+            @include animate(bounceIn, 3s, infinite);
             /*h1 span*/
             .nuestro {
                 color:map-get($colores , terciario);
@@ -35,8 +32,7 @@
         margin: 0 auto;
         padding: 10px 0;
         background-color: map-get($colores , primario);
-        animation-name: slideInUp;
-        animation-duration: 2s;
+        @include animate(slideInUp, 2s, 1);
         .img-menu{ 
             width: 32%;
             @include shadow (5px, 5px);
@@ -59,46 +55,43 @@
                 }
                 .card-front{
                     position: absolute;
+                    padding: 10px 15px 0 15px;
                     @include medidas (100%, 100%);
-                    border: 1px solid rgb(56, 54, 54);
-                    @include shadow (5px, 5px);
-                    backface-visibility: hidden;
                     @include flex(flex, space-around, center);
                     flex-direction: column;
+                    border: 1px solid rgb(56, 54, 54);
+                    @include shadow (5px, 5px);
                     background-color: map-get($colores, detalles-naranja) ;
-                    padding: 10px 15px 0 15px;
+                    backface-visibility: hidden;
                     img {
                         border: 1px solid map-get($colores , secundario);
-                        border-radius: 5px; 
                         @include shadow (5px, 5px);
                     }
                 }
                 .card-body  {
                     @include flex(flex, space-around, center);
                     p {
-                        color: map-get($colores , terciario);
-                        font-weight: bold;
-                        font-size: 20px;
+                        @include font-roboto(700, false, 22px, 1);
                         letter-spacing: 2px;
                         text-align: center;
+                        color: map-get($colores , terciario);
                     }
                 }
             }
             .card-back{
-                @include shadow (5px, 5px);
+                position: absolute;
+                padding: 15px;
                 @include medidas (100%, 100%);
                 @include flex(flex, center, center);
-                position: absolute;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
+                @include font-roboto(700, false, 20px, 1.5);
+                flex-flow: column wrap;
+                text-align: center;
                 background-color: map-get($colores , secundario);
                 color: map-get($colores , terciario);
                 border: 1px solid rgb(56, 54, 54);
-                font-size: 20px;
-                flex-flow: column wrap;
-                line-height: 30px;
-                text-align: center;
-                padding: 15px;
+                @include shadow (5px, 5px);
+                backface-visibility: hidden;
+                transform: rotateY(180deg);
             }
         }
     }
@@ -118,46 +111,43 @@
                 }
                 .card-front{
                     position: absolute;
+                    padding: 10px 15px 0 15px;
                     @include medidas (100%, 100%);
-                    border: 1px solid rgb(56, 54, 54);
-                    @include shadow (5px, 5px);
-                    backface-visibility: hidden;
                     @include flex(flex, space-around, center);
                     flex-flow: column wrap;
                     background-color: map-get($colores, detalles-naranja) ;
-                    padding: 10px 15px 0 15px;
+                    @include shadow (5px, 5px);
+                    border: 1px solid rgb(56, 54, 54);
+                    backface-visibility: hidden;
                     img {
                         border: 1px solid map-get($colores , secundario);
-                        border-radius: 5px; 
                         @include shadow (5px, 5px);
                     }
                 }
                 .card-body  {
                     @include flex(flex, space-around, center);
                     p {
-                        color: map-get($colores , terciario);
-                        font-weight: bold;
-                        font-size: 20px;
+                        @include font-roboto(700, false, 22px, 1);
                         letter-spacing: 2px;
                         text-align: center;
+                        color: map-get($colores , terciario);
                     }
                 }
             }
             .card-back{
-                @include flex(flex, center, center);
-                @include shadow (5px, 5px);
-                @include medidas (100%,100%);
-                border: 1px solid rgb(56, 54, 54);
                 position: absolute;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
+                padding: 15px;
+                @include medidas (100%,100%);
+                @include flex(flex, center, center);
+                flex-flow: column wrap;
+                @include font-roboto(700, false, 20px, 1.5);
+                text-align: center;
                 background-color: map-get($colores , secundario);
                 color: map-get($colores , terciario);
-                font-size: 20px;
-                flex-flow: column wrap;
-                line-height: 30px;
-                text-align: center;
-                padding: 15px;
+                border: 1px solid rgb(56, 54, 54);
+                @include shadow (5px, 5px);
+                transform: rotateY(180deg);
+                backface-visibility: hidden;
             }
         }
     }
@@ -165,8 +155,8 @@
         width: 90%;
         margin: 0 auto;
         padding: 10px 0;
-        background-color: map-get($colores , primario);
         @include flex(flex, space-around, center);
+        background-color: map-get($colores , primario);
         .menu-img{
             width: 32%;
             @include shadow (5px, 5px);

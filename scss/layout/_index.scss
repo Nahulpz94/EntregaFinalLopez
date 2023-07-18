@@ -2,110 +2,95 @@
 
 .body-index {
     width: $full-width;
+    min-height: 100vh;
     background-image: url(../imgs/Main/fondo-index.webp);
     background-repeat: no-repeat;
     background-size:cover;
-    min-height: 100vh;
     .main-index {/*seccion principal*/
+        @include medidas (90%, 600px);
+        margin: 0 auto;
+        display: flex;  
+        flex-wrap: wrap;
         background-image: url(../imgs/Main/fondo-volvimos.webp);
         background-size: cover;
         background-repeat: no-repeat;
-        display: flex;  
-        flex-wrap: wrap;
-        @include medidas (90%, 600px);
         color: map-get($colores , salmon-claro) ;
-        margin: 0 auto;
     
         .main-overlay {/*overlay main*/
+            margin: 0 auto;
             @include medidas (100%, 600px);
             background-color: rgba(map-get($colores , secundario), 0.9);
-            margin: 0 auto;
         }
-    
         .contenedor-volvimos{
             position: relative;
-            @include flex(flex, space-around, center);
-            flex-direction: column;
-            @include medidas (100%, 370px);
             margin: 50px auto 0;
             padding: 0px;
-            h3 {
-                @include tipografia(30px, 'Roboto, sans-serif', bolder);
+            @include medidas (100%, 370px);
+            @include flex(flex, space-around, center);
+            flex-direction: column;
+            h3 {/*parrafo*/
                 position: relative;
+                @include font-roboto(600, false, 2.5rem, 1.5);
                 text-align: center;
                 letter-spacing: 8px;
-                animation-name: bounceInLeft;
-                animation-duration: 2s;
+                @include animate(bounceInLeft, 2s, 1);
             }
-        }
-    
-        .texto-index {/*parrafo*/
-            display: flex;
-            @include medidas (100%, unset);
-            letter-spacing: 1px;
-            color: map-get($colores , terciario);
-            font-size: 24px;
-            text-align: center;
-            font-family: 'Roboto', sans-serif;
-        }
-        .volvimos {/* h1 main*/
-            @include tipografia(90px, 'Roboto', bold);
-            @include flex(flex, center, center);
-            @include medidas (100%, 100px);
-            letter-spacing: 15px;
-            color: map-get($colores , terciario);
-            margin-top: 10px;
-            animation-name: bounceInRight;
-            animation-duration: 2s;
-            span {
-                    color:map-get($colores, detalles-naranja);
-                }
+            .volvimos {/* h1 main*/
+                margin-top: 10px;
+                @include medidas (100%, 100px);
+                @include flex(flex, center, center);
+                @include font-roboto(700, false, 7rem, 3.5);
+                letter-spacing: 15px;
+                color: map-get($colores , terciario);
+                @include animate(bounceInRight, 2s, 1);
+                span {
+                        color:map-get($colores, detalles-naranja);
+                    }
+            }
         }
         .contenedor-botones-index {/* botones main*/
             @include flex(flex, center, center);
             @include medidas (100%, 40px);
-            animation-name: zoomInUp;
-            animation-duration: 2s;
+            @include animate(zoomInUp, 2s, 1);
             a { 
                 @include flex(flex, center, center);
                 color: map-get($colores , terciario);
-                font-size: 24px;
+                @include font-roboto(700, false, 24px, 1.1);
                 background-color: map-get($colores, detalles-naranja);
                 text-decoration: none;
                 }
-                
                 .boton {
-                    @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
+                    margin: 20px;
                     @include medidas (180px, unset);
                     letter-spacing: 2px;
-                    margin: 20px;
-                    transition: 0.5s ease;
+                    @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
                     @include shadow (5px, 2px, salmon-claro);          
+                    transition: 0.5s ease;
                 &:hover {
-                    transform:scale(1.1);
                     @include shadow (5px, 4px, salmon-oscuro);
                     color: map-get($colores , terciario);  
                     background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
+                    transform:scale(1.1);
                     }
                 }
             }
         }
     
     .index-section-bottom {/* seccion novedades */
-        @include flex(flex, center, center);
-        flex-direction: column;
-        @include medidas (90%, unset);
-        background-color:map-get($colores , primario);
         margin: 0 auto;
         padding-bottom: 20px;
+        @include medidas (90%, unset);
+        @include flex(flex, center, center);
+        flex-direction: column;
+        background-color:map-get($colores , primario);
         
         /*novedades h3*/
         h3 {
-            @include flex(flex, center, center);
-            color: map-get($colores , terciario);
-            margin-top: 10px;
-            font-size: 40px;
             margin-bottom: 30px;
+            margin-top: 10px;
+            @include flex(flex, center, center);
+            font-size: 40px;
+            color: map-get($colores , terciario);
             transition: 0.9s ease-in-out;
         }
         .novedad {
@@ -118,20 +103,20 @@
             @include flex(flex, space-around,center);
     
             .pizzaparty {/*foto pizza party */
+                display: flex;
                 @include medidas (500px, 600px);
                 @include shadow (5px, 10px);
                 border: #000000 1px solid;
-                display: flex;
                 transition: 0.9s ease-in-out;
                 &:hover {
                     transform: scale(1.05);
                 }
             }
             .video-index {/* video novedades */
-                @include shadow (2px, 5px);
-                @include medidas (500px, 600px);
-                border: #000000 1px solid;
                 padding: 15px; 
+                @include medidas (500px, 600px);
+                @include shadow (2px, 5px);
+                border: #000000 1px solid;
                 transition: 0.9s ease-in-out;
                 &:hover{
                     transform: scale(1.05);

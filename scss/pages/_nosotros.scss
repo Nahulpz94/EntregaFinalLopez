@@ -6,20 +6,17 @@
     background-repeat: no-repeat;
     background-size: cover;
         .contenedor-h1-nosotros{
-            animation-name: fadeInUp;
-            animation-duration: 1s;
+            margin: 0 auto;
+            padding: 35px;
+            width: 90%;
             color: map-get($colores , terciario);
             background-color: map-get($colores , secundario);
-            margin: 0 auto;
-            width: 90%;
             text-align: center;
-            padding: 35px;
+            @include animate(fadeInUp, 1s, 1);
         .nosotros-conocenos {
             margin: 0 auto;
             font-size: 60px;
-            animation-name: bounceIn;
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
+            @include animate(bounceIn, 3s, infinite);
             .conocenos-span {
                 color: map-get($colores, detalles-naranja);
             }
@@ -29,10 +26,9 @@
         @include flex(flex, space-between, center);
         @include medidas (90%, auto);
         margin: 0 auto;
-        background-color:map-get($colores , terciario);
         padding: 10px;
-        animation-name: slideInUp;
-        animation-duration: 2s;
+        background-color:map-get($colores , terciario);
+        @include animate(slideInUp, 2s, 1);
         animation-timing-function: ease-in;
         .img-nosotros{
             @include medidas (400px, 500px);
@@ -40,12 +36,11 @@
 
         }
         .nosotros-historia {
-            color:map-get($colores , secundario);
-            font-size: 24px;
-            text-align: center;
             margin: 0 20px;
+            @include font-roboto(700, false, 24px, 1.2);
+            text-align: center;
             letter-spacing: 2px;
-            font-weight: bold;
+            color:map-get($colores , secundario);
         }
         .img-2{
             @include medidas (400px, 500px);
@@ -55,12 +50,11 @@
     
     .section-fotos { /*seccion fotos*/
         @include flex(flex, space-between, center);
-        @include medidas (90%, 550px);
         margin: 0 auto;
         padding: 10px;
+        @include medidas (90%, 550px);
         background-color: map-get($colores , salmon-claro) ;
-        animation-name: slideInUp;
-        animation-duration: 3s;
+        @include animate(slideInUp, 3s, 1);
         animation-timing-function: ease-in;
         .img-nosotros{
             @include medidas (400px, 500px);
@@ -69,13 +63,12 @@
     }
     
     .section-videos { /*seccion videos*/
-        background-image: url(../imgs/Nosotros/fondo-Videos.png);
-        background-size: cover;
-        background-repeat: no-repeat;
         @include flex(flex, space-around,center);
         @include medidas (90%, 520px);
         margin: 0 auto;
-        background-color: map-get($colores , primario);
+        background-image: url(../imgs/Nosotros/fondo-Videos.png);
+        background-size: cover;
+        background-repeat: no-repeat;
         .video-nosotros { /*videos*/
             @include medidas (30%, 450px);
             @include shadow (2px, 5px);
