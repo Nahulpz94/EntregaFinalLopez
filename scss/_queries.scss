@@ -83,10 +83,11 @@
                 }
                 .contenedor-botones-index{
                     height: unset;
-
+                    animation-name: none;
                     .boton {
                         height: 35px;
                         padding: 10px 0;
+                        animation-name: none;
                     }
                 }
             }
@@ -241,7 +242,7 @@
 }
     
     .body-nosotros {
-        @include medidas (100%, unset);
+        @include medidas (100%, 100vh);
         display: block;
         margin: 0;
         .nosotros-main {
@@ -290,10 +291,9 @@
     
     
     .body-promos {
-        @include medidas (100%, unset);
+        @include medidas (100%, 100vh);
         display: block;
         margin: 0;
-        background-image: none;
         background-color: map-get($colores , primario);
 
         .contenedor-h1-promos {

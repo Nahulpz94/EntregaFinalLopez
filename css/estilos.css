@@ -56,7 +56,7 @@ html {
 .header nav ul li a {
   font-size: 20px;
   letter-spacing: 2px;
-  color: #FFD3B5;
+  color: #F8B195;
   margin: 30px;
   padding: 0 5px;
   transition: 0.4s ease;
@@ -625,7 +625,7 @@ html {
 
 /*estilo nosotros*/
 .body-nosotros {
-  background-image: url(../imgs/Nosotros/fondo-nosotros.jpg);
+  background-image: url(../imgs/Nosotros/fondo-nosotros.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -919,7 +919,7 @@ html {
 
 /*estilo contacto*/
 .body-contacto {
-  background-image: url(../imgs/Contacto/fondo-contacto.jpg);
+  background-image: url(../imgs/Contacto/fondo-contacto.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1213,10 +1213,12 @@ html {
   }
   .body-index .main-index .main-overlay .contenedor-botones-index {
     height: unset;
+    animation-name: none;
   }
   .body-index .main-index .main-overlay .contenedor-botones-index .boton {
     height: 35px;
     padding: 10px 0;
+    animation-name: none;
   }
   .body-index .index-section-bottom {
     display: block;
@@ -1385,7 +1387,7 @@ html {
   }
   .body-nosotros {
     width: 100%;
-    height: unset;
+    height: 100vh;
     display: block;
     margin: 0;
   }
@@ -1438,10 +1440,9 @@ html {
   }
   .body-promos {
     width: 100%;
-    height: unset;
+    height: 100vh;
     display: block;
     margin: 0;
-    background-image: none;
     background-color: #AE2A3F;
   }
   .body-promos .contenedor-h1-promos {
