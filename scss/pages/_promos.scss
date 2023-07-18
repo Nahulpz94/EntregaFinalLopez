@@ -11,10 +11,10 @@
         background-color:map-get($colores , secundario);
         animation-name: fadeInUp;
         animation-duration: 1s;
+        padding: 40px;
         margin: 0 auto;
         .promo-h1 { /*promociones*/
             @include flex-center(flex,center,center);
-            padding: 40px;
             font-size: 60px;
             animation-name: bounceIn;
             animation-duration: 3s;
@@ -32,8 +32,9 @@
         width: 90%;
         margin: 0 auto;
         background-color: map-get($colores, detalles-naranja);
-        animation-name: bounceInUp;
-        animation-duration: 3s;
+        animation-name: slideInUp;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
         .promo-img {
             @include medidas (100%,700px);
             margin: 10px;

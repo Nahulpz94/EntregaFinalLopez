@@ -23,8 +23,8 @@ html {
   background-color: #AE2A3F;
   border-bottom: 1px solid #1C3334;
   width: 100%;
-  margin: 0 auto;
   height: 100px;
+  margin: 0 auto;
 }
 .header #logo { /*logo*/
   position: relative;
@@ -60,14 +60,12 @@ html {
   color: #FFD3B5;
   margin: 30px;
   padding: 0 5px;
-  transition: 0.6s ease;
+  transition: 0.4s ease;
   text-decoration: none;
 }
 .header nav ul li a:hover {
   color: #F5F5F5;
   transform: scale(1.2);
-  border: 1px solid #FF5733;
-  border-radius: 5px;
 }
 .header nav ul li a#active {
   color: #F5F5F5;
@@ -203,14 +201,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
+  padding: 5px 0;
   background-color: #FF5733;
   color: #F5F5F5;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #1C3334;
   width: 180px;
   height: unset;
   letter-spacing: 2px;
@@ -426,12 +424,14 @@ html {
   animation-duration: 1s;
 }
 #body-menu .contenedor-h1-menu .nuestro-menu { /*h1 menu*/
+  width: 90%;
   color: #FF5733;
   text-align: center;
   font-size: 60px;
   animation-name: bounceIn;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+  margin: 0;
   /*h1 span*/
 }
 #body-menu .contenedor-h1-menu .nuestro-menu .nuestro {
@@ -445,7 +445,7 @@ html {
   margin: 0 auto;
   padding: 10px 0;
   background-color: #AE2A3F;
-  animation-name: bounceInUp;
+  animation-name: slideInUp;
   animation-duration: 2s;
 }
 #body-menu .menu-section-top .img-menu {
@@ -637,11 +637,11 @@ html {
   background-color: #1C3334;
   margin: 0 auto;
   width: 90%;
+  text-align: center;
+  padding: 35px;
 }
 .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos {
   margin: 0 auto;
-  text-align: center;
-  padding: 35px;
   font-size: 60px;
   animation-name: bounceIn;
   animation-duration: 3s;
@@ -659,8 +659,9 @@ html {
   width: 90%;
   background-color: #F5F5F5;
   padding: 10px;
-  animation-name: bounceInUp;
-  animation-duration: 3s;
+  animation-name: slideInUp;
+  animation-duration: 2s;
+  animation-timing-function: ease-in;
 }
 .body-nosotros .nosotros-main .img-nosotros {
   width: 400px;
@@ -692,8 +693,9 @@ html {
   margin: 0 auto;
   padding: 10px;
   background-color: #FFD3B5;
-  animation-name: bounceInUp;
+  animation-name: slideInUp;
   animation-duration: 3s;
+  animation-timing-function: ease-in;
 }
 .body-nosotros .section-fotos .img-nosotros {
   width: 400px;
@@ -735,13 +737,13 @@ html {
   background-color: #1C3334;
   animation-name: fadeInUp;
   animation-duration: 1s;
+  padding: 40px;
   margin: 0 auto;
 }
 .body-promos .contenedor-h1-promos .promo-h1 { /*promociones*/
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 40px;
   font-size: 60px;
   animation-name: bounceIn;
   animation-duration: 3s;
@@ -761,8 +763,9 @@ html {
   width: 90%;
   margin: 0 auto;
   background-color: #FF5733;
-  animation-name: bounceInUp;
-  animation-duration: 3s;
+  animation-name: slideInUp;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
 }
 .body-promos .promo-section-top .promo-img {
   width: 100%;
@@ -926,13 +929,13 @@ html {
   animation-name: fadeInUp;
   animation-duration: 1s;
   margin: 0 auto;
+  padding: 40px;
 }
 .body-contacto .contenedor-h1-contacto .contacto-h1 { /*texto contacto*/
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  padding: 40px;
   font-size: 60px;
   animation-name: bounceIn;
   animation-duration: 3s;
@@ -1078,14 +1081,14 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4px 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px #1C3334;
+  padding: 5px 0;
   background-color: #FF5733;
   color: #F5F5F5;
   text-decoration: none;
   font-weight: bold;
   transition: background-color 0.3s ease;
-  border-radius: 5px;
-  box-shadow: 2px 2px 4px #1C3334;
 }
 .body-contacto .main-contacto .form-contacto .contenedor-boton-contacto .boton-contacto:hover {
   transform: scale(1.05);
@@ -1317,7 +1320,7 @@ html {
   }
   #body-menu .contenedor-h1-menu .nuestro-menu {
     padding: 20px;
-    font-size: 3em;
+    font-size: 2em;
     width: 100%;
     height: auto;
   }
@@ -1389,7 +1392,7 @@ html {
   }
   .body-nosotros .contenedor-h1-nosotros .nosotros-conocenos {
     margin: 0;
-    font-size: 3em;
+    font-size: 2em;
   }
   .body-nosotros .section-fotos {
     width: 100%;
@@ -1431,7 +1434,7 @@ html {
     height: unset;
   }
   .body-promos .contenedor-h1-promos .promo-h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .body-promos .promo-section-top {
     width: 100%;
@@ -1506,7 +1509,7 @@ html {
     background-color: #1C3334;
   }
   .body-contacto .contenedor-h1-contacto .contacto-h1 {
-    font-size: 3em;
+    font-size: 2em;
   }
   .body-contacto .contenedor-h1-contacto .contacto-h1 .contacto-h1 span {
     display: none;

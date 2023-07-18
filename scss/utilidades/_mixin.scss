@@ -10,13 +10,6 @@
     height: $alto;
 }
 
-@mixin margenes ($top, $right, $bottom, $left){
-    margin-top: $top;
-    margin-right: $right ; 
-    margin-bottom: $bottom;
-    margin-left: $left;
-}
-
 @mixin shadow ($radius, $eje, $color: secundario) {
     border-radius: $radius;
     box-shadow: $eje $eje ($eje*2)map-get($colores , $color),
@@ -30,11 +23,12 @@
 
 @mixin boton($background-color, $text-color) {
     @include flex-center(flex, center , center);
-    padding: 4px 0;
+        @include shadow (5px, 2px);
+    padding: 5px 0;
     background-color: $background-color;
     color: $text-color;
     text-decoration: none;
     font-weight: bold;
     transition: background-color 0.3s ease;
-    @include shadow (5px, 2px);
+
 }

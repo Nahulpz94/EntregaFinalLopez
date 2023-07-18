@@ -187,7 +187,7 @@
         @include medidas (100%, auto);
         .nuestro-menu {
             padding: 20px;
-            font-size: 3em;
+            font-size: 2em;
             @include medidas (100%, auto)
         }
     }
@@ -249,7 +249,7 @@
             width: 100%;
         .nosotros-conocenos {
             margin: 0;
-            font-size: 3em;
+            font-size: 2em;
             }
         }
         .section-fotos {
@@ -288,7 +288,7 @@
         .contenedor-h1-promos {
             @include medidas (100%, unset);
             .promo-h1 {
-            font-size: 3em;
+            font-size: 2em;
             }
         }
         .promo-section-top {
@@ -352,7 +352,7 @@
             width: 100%;
             background-color: map-get($colores ,secundario );
             .contacto-h1{
-                font-size: 3em;
+                font-size: 2em;
                 .contacto-h1 span{
                     display: none;
                 }

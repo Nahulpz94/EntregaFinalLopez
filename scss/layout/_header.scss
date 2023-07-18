@@ -6,9 +6,8 @@
     @include shadow (0, 4px);
     background-color: map-get($colores , primario);
     border-bottom: 1px solid map-get($colores , secundario );
-    width: 100%;
+    @include medidas (100%, 100px);
     margin: 0 auto;
-    height: 100px;
     #logo { /*logo*/
         position: relative;
         right: 120px;
@@ -40,13 +39,11 @@
                     color: map-get($colores , salmon-claro) ;
                     margin: 30px;
                     padding: 0 5px;
-                    transition: 0.6s ease;
+                    transition: 0.4s ease;
                     text-decoration: none;
                     &:hover{
                         color: map-get($colores, terciario);
                         transform: scale(1.2);
-                        border: 1px solid map-get($colores , detalles-naranja);
-                        border-radius: 5px;
                     }
                     &#active {
                         color: map-get($colores , terciario);
