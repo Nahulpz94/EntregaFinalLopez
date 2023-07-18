@@ -11,8 +11,7 @@
     #logo { /*logo*/
         position: relative;
         right: 120px;
-        @include medidas (200px, 122px);
-        padding-bottom: 6%;
+        @include medidas (200px, unset);
         a {/*link logo*/
             color: map-get($colores, salmon-claro);
         }
