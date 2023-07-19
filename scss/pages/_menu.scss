@@ -8,7 +8,7 @@
     .contenedor-h1-menu{
         width: 90%;
         margin: 0 auto;
-        padding: 40px;
+        padding: 42px;
         background-color: map-get($colores , secundario);
         @include animate(fadeInUp, 1s, 1);
         .nuestro-menu {/*h1 menu*/

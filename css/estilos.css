@@ -460,7 +460,7 @@ html {
 #body-menu .contenedor-h1-menu {
   width: 90%;
   margin: 0 auto;
-  padding: 40px;
+  padding: 42px;
   background-color: #1C3334;
   animation-name: fadeInUp;
   animation-duration: 1s;
@@ -691,7 +691,7 @@ html {
 }
 .body-nosotros .contenedor-h1-nosotros {
   margin: 0 auto;
-  padding: 35px;
+  padding: 40px;
   width: 90%;
   color: #F5F5F5;
   background-color: #1C3334;
