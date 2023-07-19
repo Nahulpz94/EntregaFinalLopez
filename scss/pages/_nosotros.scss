@@ -41,6 +41,9 @@
             text-align: center;
             letter-spacing: 2px;
             color:map-get($colores , secundario);
+                strong{
+                    color: map-get($colores, detalles-naranja );
+                }
         }
         .img-2{
             @include medidas (400px, 500px);

@@ -742,6 +742,9 @@ html {
   letter-spacing: 2px;
   color: #1C3334;
 }
+.body-nosotros .nosotros-main .nosotros-historia strong {
+  color: #FF5733;
+}
 .body-nosotros .nosotros-main .img-2 {
   width: 400px;
   height: 500px;
@@ -1102,6 +1105,7 @@ html {
   font-size: 16px;
   font-family: unset;
   font-weight: bolder;
+  margin: 10px 0;
   line-height: 20px;
   text-align: center;
   color: #F5F5F5;
@@ -1259,9 +1263,8 @@ html {
   }
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
+    justify-content: flex-start;
+    width: 100%;
     height: unset;
     margin-top: 0;
     padding: 0;
@@ -1278,6 +1281,7 @@ html {
   .body-index .main-index .main-overlay .contenedor-volvimos .volvimos-h3 {
     width: 100%;
     height: unset;
+    text-align: left;
     font-size: 24px;
     letter-spacing: 0;
     animation-name: none;
@@ -1475,6 +1479,7 @@ html {
   }
   .body-nosotros .nosotros-main .nosotros-historia {
     margin: 2rem 1rem;
+    text-align: left;
   }
   .body-nosotros .contenedor-h1-nosotros {
     display: flex;

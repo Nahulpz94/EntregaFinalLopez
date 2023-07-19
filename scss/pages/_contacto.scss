@@ -92,6 +92,7 @@
             .caja-mensaje { /*mensaje*/
                 @include medidas(80%, 180px);
                 @include tipografia(16px, unset, bolder);
+                margin: 10px 0;
                 line-height: 20px;
                 text-align: center;
                 color: map-get($colores , terciario);

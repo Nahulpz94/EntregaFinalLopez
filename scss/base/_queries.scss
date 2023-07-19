@@ -57,9 +57,11 @@
                 padding: 0 2em;  
                 .contenedor-volvimos {
                     @include medidas (100%, unset);
+
                     .volvimos {
-                        @include flex(flex, center, center);
-                        @include medidas (90%, unset);
+                        display: flex;
+                        justify-content: flex-start;
+                        @include medidas (100%, unset);
                         margin-top: 0;
                         padding: 0;
                         margin-bottom: 20px;
@@ -74,6 +76,7 @@
                     }
                     .volvimos-h3 {
                         @include medidas (100%, unset);
+                        text-align: left;
                         font-size: 24px;
                         letter-spacing: 0;
                         animation-name: none;
@@ -247,6 +250,7 @@
             flex-direction: column;
             .nosotros-historia {
                 margin: 2rem 1rem;
+                text-align: left;
             }
         }
         .contenedor-h1-nosotros{
