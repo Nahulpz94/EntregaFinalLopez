@@ -453,7 +453,7 @@ html {
 #body-menu { /*estilos menu*/
   position: absolute;
   width: 100%;
-  background-image: url(../imgs/Menu/fondo-menu-3.jpg); /*fondo*/
+  background-image: url(../imgs/menu/fondo-menu-3.webp); /*fondo*/
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -513,6 +513,7 @@ html {
   position: relative;
   width: 286px;
   height: 270px;
+  perspective: 1000px;
 }
 #body-menu .card-container-top .card-container .card-1 {
   position: absolute;
@@ -595,6 +596,7 @@ html {
   position: relative;
   width: 286px;
   height: 270px;
+  perspective: 1000px;
 }
 #body-menu .card-container-bottom .card-container .card-1 {
   position: absolute;
@@ -614,11 +616,11 @@ html {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-flow: column wrap;
-  background-color: #FF5733;
+  flex-direction: column;
+  border: 1px solid rgb(56, 54, 54);
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  border: 1px solid rgb(56, 54, 54);
+  background-color: #FF5733;
   backface-visibility: hidden;
 }
 #body-menu .card-container-bottom .card-container .card-1 .card-front img {
@@ -650,21 +652,21 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
   font-family: "Roboto Bold", sans-serif;
   font-weight: 700;
   font-style: false;
   italic: normal;
   font-size: 20px;
   line-height: 1.5;
+  flex-flow: column wrap;
   text-align: center;
   background-color: #1C3334;
   color: #F5F5F5;
   border: 1px solid rgb(56, 54, 54);
   border-radius: 5px;
   box-shadow: 5px 5px 10px #1C3334;
-  transform: rotateY(180deg);
   backface-visibility: hidden;
+  transform: rotateY(180deg);
 }
 #body-menu .menu-section-bottom { /*seccion baja*/
   width: 90%;
@@ -683,7 +685,7 @@ html {
 
 /*estilo nosotros*/
 .body-nosotros {
-  background-image: url(../imgs/Nosotros/fondo-nosotros.webp);
+  background-image: url(../imgs/nosotros/fondo-nosotros.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -787,7 +789,7 @@ html {
 
 /*estilo promociones*/
 .body-promos {
-  background-image: url(../imgs/Promos/fondo-promos.jpg);
+  background-image: url(../imgs/promos/fondo-promos.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -888,7 +890,7 @@ html {
   width: 90%;
   height: 320px;
   margin: 0 auto;
-  background-image: url(../imgs/Promos/fondo-pagos.png);
+  background-image: url(../imgs/promos/fondo-pagos.webp);
 }
 .body-promos .section-mediopagos .caja-efectivo { /*efectivo*/
   width: 300px;
@@ -983,7 +985,7 @@ html {
 
 /*estilo contacto*/
 .body-contacto {
-  background-image: url(../imgs/Contacto/fondo-contacto.webp);
+  background-image: url(../imgs/contacto/fondo-contacto.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1033,7 +1035,8 @@ html {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: url(../imgs/Promos/fondo-pagos.png);
+  background-image: url(../imgs/contacto/fondo-formulario.webp);
+  background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
   box-shadow: 2px 2px 4px #1C3334;
@@ -1637,8 +1640,11 @@ html {
   .body-contacto .main-contacto .form-contacto {
     margin: 1rem 0;
   }
+  .body-contacto .main-contacto .form-contacto .contenedor-boton-contacto {
+    height: 100px;
+  }
   .body-contacto .main-contacto .form-contacto .boton-contacto {
-    width: 50%;
+    width: 100%;
   }
   .body-contacto .main-contacto .contenedor-mapa {
     width: 100%;

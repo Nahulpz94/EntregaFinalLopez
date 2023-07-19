@@ -1,7 +1,7 @@
 /*estilo promociones*/
 
 .body-promos {
-    background-image: url(../imgs/Promos/fondo-promos.jpg);
+    background-image: url(../imgs/promos/fondo-promos.webp);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -77,7 +77,8 @@
         @include flex(flex, space-around,center);
         @include medidas (90%, 320px);
         margin: 0 auto;
-        background-image:url(../imgs/Promos/fondo-pagos.png);
+        background-image:url(../imgs/promos/fondo-pagos.webp);
+
         .caja-efectivo { /*efectivo*/
             @include medidas (300px, 240px);
             @include flex(flex, center, center);
