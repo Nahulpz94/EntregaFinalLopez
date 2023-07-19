@@ -2,7 +2,7 @@
 /*estilo contacto*/
 
 .body-contacto {
-    background-image: url(../imgs/contacto/fondo-contacto.webp);
+    background-image: url(../imgs/Contacto/fondo-contacto.webp);
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -39,7 +39,7 @@
         padding: 20px;
         margin: 0 auto;
         @include flex(flex, space-evenly,center);
-        background-image: url(../imgs/contacto/fondo-formulario.webp);
+        background-image: url(../imgs/Contacto/fondo-formulario.webp);
         background-repeat: no-repeat;
         background-size: cover;
         @include shadow (5px, 2px);
